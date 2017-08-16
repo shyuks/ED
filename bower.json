@@ -1,0 +1,27 @@
+{
+  "name": "multi-sites",
+  "description": "Multi-site of doctorpedia",
+  "main": "index.js",
+  "authors": [
+    "greg hasenauer"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "api"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "font-awesome": "^4.7.0",
+    "hover": "^2.1.1"
+  }
+}
