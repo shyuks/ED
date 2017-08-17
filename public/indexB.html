@@ -65,7 +65,7 @@
         /* Landing Section */
         #landing {
             padding-top: 100px;
-            padding-bottom: 50px;
+            padding-bottom: 100px;
             background: linear-gradient(to left, white, transparent), url("./img/1.png") no-repeat center;
             background-size: cover;
         }
@@ -123,19 +123,12 @@
         #videos {
             background-color: white;
             padding-top: 50px;
-            padding-bottom: 10px;
             text-align: center;
         }
         #videos h3 {
             display: inline-block;
         }
-        #videos span {
-            display: inline-block;
-            color: #43E1F9;
-            font-size: 24px;
-        }
-
-        #videos .col-xs-8 span {
+        #videos .video-expansion {
             display: inline-block;
             color: #43E1F9;
             font-size: 24px;
@@ -149,9 +142,13 @@
         #videos .carousel-control.right {
             background-image: none !important;
         }
+        #videos .carousel-indicators {
+            visibility: hidden;
+        }
         #videos .video {
             background-color: black;
         }
+
         /* Featured */
         #featured {
             background-color: white;
@@ -387,7 +384,7 @@
         
         <!-- Videos -->
         <section id="videos">
-            <h3>Videos</h3> <span>+</span><br>
+            <h3>Videos</h3> <span class="video-expansion">+</span><br>
                 
             <!-- Carousel -->
             <div id="carousel" class="carousel slide" data-ride="carousel">
