@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ErectileDysfunction | Doctorpedia</title>
+        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    </head>
+
+    <style media="screen">
+
+        /* Body */
+        body {
+            background-color: grey;
+            overflow-x: hidden;
+            font-family: Montserrat;
+            width: 100%;
+            height: auto 100%;
+            margin: auto 0;
+            position: relative;
+            transition: all 0.5s ease;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            z-index: 1;
+            width: 100%;
+            top: 0;
+            background-color: #DAE8F2;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-family: Montserrat;
+            font-size: 16px;
+        }
+        header .search-menu {
+            text-align: right;
+            font-size: 20px;
+        }
+        header .search-menu i {
+            color: black;
+        }
+        header .ED {
+            color: #7ca9d8;
+            font-size: 19px;
+            font-weight: 600;
+            font-family: Montserrat;
+            letter-spacing: 0.5px;
+        }
+        header .ED-desc {
+            font-weight: 600;
+        }
+        header .ED-pedia {
+            font-weight: 0;
+            font-size: 18px;
+
+        }
+
+        /* Landing Section */
+        #landing {
+            padding-top: 100px;
+            padding-bottom: 0px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .landing-title {
+            font-weight: bold;
+            font-size: 50px;
+        }
+
+        /* break-point-1 */
+        #break-point-1 {
+            background-color: white;
+        }
+        .break-point-title-1 {
+            text-align: center;
+            margin-top: 35px !important;
+            margin-bottom: 35px !important;
+        }
+
+        /* Resources */
+        #resources {
+            background-color: #CAE4F9;
+        }
+        #resources .row .col-xs-2 {
+            padding-top: 10px;
+            padding-bottom: 100px;
+        }
+        #resources p {
+            padding-top: 10px;
+        }
+        #resources .one {
+            background-color: #CAE4F9 !important;
+        }
+        #resources .two {
+            background-color: #B6DBF9 !important;
+        }
+        #resources .three {
+            background-color: #A4D3F9 !important;
+        }
+        #resources .four {
+            background-color: #93CBF9 !important;
+        }
+        #resources .five {
+            background-color: #81C3F9 !important;
+        }
+        #resources .six {
+            background-color: #93CBF9 !important;
+            /*background-color: #72BDF9;*/
+        }
+
+        /* Featured */
+        #featured {
+            background-color: white;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #featured .col-xs-8 h3 {
+            display: inline-block;
+        }
+
+        #featured .col-xs-8 span {
+            display: inline-block;
+            color: #43E1F9;
+            font-size: 24px;
+        }
+
+        /* Break Point 2 */
+        #break-point-2 {
+            background: linear-gradient(to left, white, transparent), url("./img/city3.png") no-repeat center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        #break-point-2 h3 {
+            text-shadow: 2px 2px 40px #000;
+        }
+        #break-point-2 p {
+            font-size: 12px;
+        }
+
+        /* Break Point 3 */
+        #break-point-3 {
+            background: linear-gradient(to right, white, transparent), url("./img/city3.png") no-repeat center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        #break-point-3 h3 {
+            text-shadow: 2px 2px 40px #000;
+        }
+        #break-point-3 p {
+            font-size: 12px;
+        }
+        /* Videos */
+        #videos {
+            background-color: white;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+        #videos h3 {
+            display: inline-block;
+        }
+        #main-video-container {
+            background-color: white;
+            text-align: center;
+        }
+        #main-video-container .main-video{
+            background-color: black;
+        }
+        #videos .col-xs-8 span {
+            display: inline-block;
+            color: #43E1F9;
+            font-size: 24px;
+        }
+        #videos .video-carousel {
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
+        #videos .carousel-control.left {
+            background-image: none !important;
+        }
+        #videos .carousel-control.right {
+            background-image: none !important;
+        }
+        #videos .video {
+            background-color: black;
+        }
+
+        /* How */
+        #how {
+            background-color: #AED8F9;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+        #how .col-xs-5 p {
+            font-size: 10px;
+        }
+
+
+        /* community */
+        #community {
+            background-color: white;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        #community .col-xs-8 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        #community .col-xs-8 h3 {
+            display: inline-block;
+        }
+        #community .col-xs-8 span {
+            display: inline-block;
+            color: #43E1F9;
+            font-size: 24px;
+        }
+        #community .forum .box {
+            background-color: #EAEAEA;
+            padding-top: 10px;
+            padding-bottom: 100px;
+        }
+        #community .forum .odd {
+            padding-bottom: 150px !important;
+        }
+        #community .forum h4 {
+            font-size: 16px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #community .forum p {
+            font-size: 12px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #community .box:hover {
+            background-color: #81C3F9;
+        }
+
+        /* email subscription */
+        #email-subscription {
+            background-color: white;
+            padding-top: 10px;
+            padding-bottom: 80px;
+        }
+        #email-subscription .email-box {
+            height: 200px;
+            width: 100%;
+        }
+        #email-subscription .email-img {
+            background-image: url('./img/email_subscribe.png');
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+            width: 36%;
+            position: absolute;
+        }
+        #email-subscription .email-form {
+            float: right;
+            text-align: center;
+            color: white;
+            height: 200px;
+            background-color: #847F81;
+            width: 64%;
+        }
+        #email-subscription .email-form h3 {
+            padding-top: 30px;
+            font-size: 26px;
+        }
+
+        /* Footer */
+        #footer {
+            background-color: #9AC6EA;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+        #footer h4 {
+            font-weight: 500;
+        }
+        #footer p {
+            margin: 0 !important;
+            text-decoration: none;
+            color: black;
+            font-size: 12px;
+        }
+        #footer i {
+            font-size: 18px;
+        }
+
+    </style>
+
+    <body>
+
+        <!-- Header -->
+        <header id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <span class="ED">ErectileDysfunction</span><span class="ED-pedia">pedia</span> <span> | </span> <span class="ED-desc"> The erectile dysfunction resource you can trust</span>
+                    </div>
+                    <div class="col-lg-4 search-menu">
+                        <a href="#"><i class="fa fa-search-plus" aria-hidden="true"> </i></a>&nbsp;
+                        <a href="#"><i class="fa fa-bars" aria-hidden="true"> </i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Landing -->
+        <section id="landing">
+            <div class="container">
+                <div class="row">
+                    <div class"col-xs-12">
+                        <h1 class="landing-title">Resources Headers (A)</h1>
+                        <p>
+                            Say goodbye to quacks. No more wasting hours diggin for reliable 
+                            health information. 
+                            <br>
+                            Get tips from experts and access to the best tools and resources 
+                            you need in one convenient place. Hello, Life!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- break point 1 -->
+        <section id="break-point-1">
+            <div class="container">
+                <h4 class="break-point-title-1">Browse resources</h4>
+            </div>
+        </section>
+
+        <!-- Resources Toggle -->
+        <section id="resources">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2 one hvr-grow">
+                        <img src="./img/icon_newsinformation.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>News & Information</p>
+                    </div>
+                    <div class="col-xs-2 two hvr-grow">
+                        <img src="./img/icon_treatmenttherapies.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>Treatments & Therapies</p>
+                    </div>
+                    <div class="col-xs-2 three hvr-grow">
+                        <img src="./img/icon_digitalapps.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>Digital Apps</p>
+                        
+                    </div>
+                    <div class="col-xs-2 four hvr-grow">
+                        <img src="./img/icon_nutritionfitness.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>Nutrition & Fitness</p>
+                    </div>
+                    <div class="col-xs-2 five hvr-grow">
+                        <img src="./img/icon_communitysupport.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>Community & Support</p>
+                    </div>
+                    <div class="col-xs-2 six hvr-grow">
+                        <img src="./img/icon_nonprofit.png" alt="" style="width: 60px; height: 60px;"><br>
+                        <p>Non-profit Organizations</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- HR -->
+        <section id="featured">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <h3>Featured XXXX</h3> <span>+</span><br>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- break point 2 -->
+        <section id="break-point-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-4">
+                        <h3>How to find the right medical team for your health goals</h3>
+                        <br>
+                        <p>Simodi ament exerumquas di te sint aut volupid maios maximinctur, ommo ium, volenia conesto berum, sumet odi volorio nseque volorestio Rescium et harumquias pore es volorer orepudia quat</p>
+                        <br>
+                        <a href="#" style="text-decoration: none;">
+                            <p style="font-size: 18px; color: #6DBFF2; text-shadow: 2px 2px 40px #000; display: inline-block;">Full Story</p>
+                            <i class="fa fa-angle-double-right" aria-hidden="true" style='display: inline-block; color: #6DBFF2;'></i>
+                        </a>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- break point 3 -->
+        <section id="break-point-3">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-4">
+                        <h3>More health tips topic headline from this nurse</h3>
+                        <br>
+                        <p>Simodi ament exerumquas di te sint aut volupid maios maximinctur, ommo ium, volenia conesto berum, sumet odi volorio nseque volorestio Rescium et harumquias pore es volorer orepudia quat.</p>
+                        <br>
+                        <a href="#" style="text-decoration: none;">
+                            <p style="font-size: 18px; color: #6DBFF2; text-shadow: 2px 2px 40px #000; display: inline-block;">Full Story</p>
+                            <i class="fa fa-angle-double-right" aria-hidden="true" style='display: inline-block; color: #6DBFF2;'></i>
+                        </a>
+                    </div>
+
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Videos -->
+        <section id="videos">
+            <h3>Videos</h3><br>
+            
+            <!-- Main Video -->
+            <div id="main-video-container">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        
+                        <video class="main-video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                        
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+                
+            <!-- Carousel -->
+            <div id="carousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel" data-slide-to="1"></li>
+                    <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                </div>
+                                <div class="col-xs-8">
+
+                                    <div class="row video-carousel">
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                </div>
+                                <div class="col-xs-8">
+
+                                    <div class="row video-carousel">
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                </div>
+                                <div class="col-xs-8">
+
+                                    <div class="row video-carousel">
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+
+
+        <!-- community -->
+        <section id="community">
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <hr style="border-top: 1px solid #3DBFD3;">
+                        <h3>Featured Community</h3> <span>+</span><br>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-2 forum hvr-pulse">
+                        <div class="box">
+                            <h4>Community/<br>Forum Name</h4>
+                            <p>
+                                Simodi ament exerumquas
+                                di te sint aut volupid maios
+                                maximinctur, ommo ium,
+                                volenia conesto berum,
+                                sumet odi volorio nseque
+                                harumquias pore es volorer
+                                orepudia quat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 forum hvr-pulse">
+                        <div class="box odd">
+                            <h4>Community/<br>Forum Name</h4>
+                            <p>
+                                Simodi ament exerumquas 
+                                di te sint aut volupid maios 
+                                maximinctur, ommo ium, volenia 
+                                conesto berum, sumet odi volote 
+                                sint aut volupid maios 
+                                maximinctur, ommrio nseque 
+                                onesto beronesto ber harumquias 
+                                pore es voloer orerer
+                                orepudia quat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 forum hvr-pulse">
+                        <div class="box ">
+                            <h4>Community/<br>Forum Name</h4>
+                            <p>
+                                Simodi ament exerumquas
+                                di te sint aut volupid maios
+                                maximinctur, ommo ium,
+                                volenia conesto berum,
+                                sumet odi volorio nseque
+                                harumquias pore es volorer
+                                orepudia quat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 forum hvr-pulse">
+                        <div class="box odd">
+                            <h4>Community/<br>Forum Name</h4>
+                            <p>
+                                Simodi ament exerumquas 
+                                di te sint aut volupid maios 
+                                maximinctur, ommo ium, volenia 
+                                conesto berum, sumet odi volote 
+                                sint aut volupid maios 
+                                maximinctur, ommrio nseque 
+                                onesto beronesto ber harumquias 
+                                pore es voloer orerer
+                                orepudia quat.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 hvr-pulse">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- email subscription -->
+        <section id="email-subscription">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-2">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="email-box">
+                            <div class="email-img"></div>
+                            <div class="email-form">
+                                <h3>Want to stay informed?</h3>
+                                <p>Receive the latest news and resources in your inbox!</p>
+                                <form class="" action="index.html" method="post">
+                                    <input type="text" name="Email" placeholder="Email" style="color: black; border-radius: 25px; width: 50%; height: 30px; display: inline-block;">
+                                    <img src="./img/button_subscribe.png" alt="" style="display: inline-block; width: 16%; height: auto 40px;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- how break point -->
+        <section id="how">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-1">
+                    </div>
+                    <div class="col-xs-5">
+                        <h4>How this site works</h4>
+                        <p>
+                            We think it’s important you understand the strengths and limitations of the site. We’re a journalistic website and aim to provide the best medical guides, tips, tools and techniques, but can’t guarantee to be perfect, so do note you use the information at your own risk and we can’t accept liability if things go wrong. This info does not constitute financial advice, always do your own research on top to ensure it’s right for your specific circumstances. Do note, while we always aim to give you accurate product.
+                        </p>
+                    </div>
+                    <div class="col-xs-5">
+                        <h4></h4><br>
+                        <p>
+                            Info at the point of publication, unfortunately website information can always be changed by the provider afterwards, so double check first.We don’t as a general policy investigate the solvency of companies mentioned (how likely they are to go bust), but there is a risk any company can struggle and it’s rarely made public until it’s too late. We often link to other websites, but we can’t be responsible for their content. Diabetespedia is entirely editorially independent. Its stance of putting consumers first is protected and enshrined in the legally-binding MSE Editorial Code.
+                        </p>
+                    </div>
+                    <div class="col-xs-1">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-1">
+                    </div>
+                    <div class="col-xs-2">
+                        <h4>About</h4>
+                        <a href="#"><p>About This Site</p></a>
+                        <a href="#"><p>Contact Us</p></a>
+                        <a href="#"><p>Site Map</p></a>
+                    </div>
+                    <div class="col-xs-2">
+                        <h4>Legal</h4>
+                        <a href="#"><p>Privacy Policy</p></a>
+                        <a href="#"><p>Terms Of Use</p></a>
+                        <a href="#"><p>Accessibility</p></a>
+                    </div>
+                    <div class="col-xs-3">
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="./img/doctorpedialogo_white.png" alt="" style="width: 80%; height: auto 50px;"><br>
+                        <p>© 2017 Doctorpedia. All rights reserved. Doctorpedia does not provide medical advice, diagnosis or treatment.</p><br>
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-vimeo-square"></i>
+                        <i class="fa fa-envelope-square"></i>
+                    </div>
+                    <div class="col-xs-1">
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+
+    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            // Activate Carousel
+
+        })
+
+
+
+
+    </script>
+</html>
