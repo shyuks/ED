@@ -134,6 +134,17 @@
         #videos h3 {
             display: inline-block;
         }
+        #videos p {
+            font-size: 12px;
+            text-align: left;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #videos .video {
+            width: 33%;
+            border: 1px solid black;
+            display: inline-block
+        }
         #videos .video-expansion {
             display: inline-block;
             color: #43E1F9;
@@ -150,12 +161,6 @@
         }
         #videos .carousel-indicators {
             visibility: hidden;
-        }
-        #videos p {
-            font-size: 12px;
-            text-align: left;
-            padding-left: 5px;
-            padding-right: 5px;
         }
 
         /* Featured */
@@ -414,46 +419,26 @@
                                 <div class="col-xs-8">
 
                                     <div class="row video-carousel">
-                                        <!-- <div style="width: 33%; border: 1px solid black; display: inline-block">
+                                        <div class="video-border">
+                                                <iframe src="https://player.vimeo.com/video/120028940" style="width:100%; height:100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                                <p>
+                                                    <a href="https://vimeo.com/120028940">Sleep Tips-Sahni-Condition Intro-SLTIP1aiiSANHI [1aiistSAH]</a> from <a href="https://vimeo.com/user24848345">Doctorpedia</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+                                        </div>
+                                        <div class="video-border">
+                                            <iframe src="https://player.vimeo.com/video/225953346?title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                                            <p>
+                                                Description of Video 
+                                                Simodi ament exerumquas 
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
+                                        </div>
+                                        <div class="video-border">
                                             <iframe style="width: 100%; height: 100%" src="https://www.youtube.com/embed/ICCr3W_SC-Q" frameborder="0" allowfullscreen></iframe>
                                             <p>
                                                 Description of Video 
                                                 Simodi ament exerumquas 
                                                 di te sint aut volupid maios maximinctur
                                             </p>
-                                        </div> -->
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <div 
-                                                class="youtube-player"
-                                                data-id="-ppdT9OF4sA"
-                                                data-related="0"
-                                                data-control="0"
-                                                data-info="1"
-                                                data-fullscreen="1"
-                                                style=
-                                                    "width:100%;
-                                                    display: block;
-                                                    position: relative;
-                                                    cursor: pointer;
-                                                    max-height:360px;
-                                                    height:100%;
-                                                    overflow:hidden;
-                                                    padding-bottom:56.25%;
-                                                    margin:0                                                    
-                                                    auto"> 
-                                                <img
-                                                    style=
-                                                        "bottom: -100%; display: block; left: 0; margin: auto; max-width: 100%;
-                                                        width: 100%;height:auto; position: absolute; right: 0; top: -100%;"> 
-                                                <div 
-                                                    style=
-                                                        "height: 72px; width: 72px; left: 50%; top: 50%; margin-left: -36px; 
-                                                        margin-top: -36px; position: absolute; background: url('http://i.imgur.com/TxzC70f.png') no-repeat;">
-                                                </div>
-                                            </div> 
-                                        </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
                                         </div>
                                     </div>
 
@@ -784,30 +769,7 @@
 
         })
 
-        $(document).ready(function() { 
-            var v = document.getElementsByClassName("youtube-player");
-            
-            for (var n = 0; n < v.length; n++) {
-                v[n].onclick = function () { 
-                    var iframe = document.createElement("iframe"); 
-                    iframe.setAttribute(
-                        "src", "//www.youtube.com/embed/" + this.dataset.id + 
-                        "?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&rel="+ 
-                        this.dataset.related + "&controls=" + this.dataset.control + 
-                        "&showinfo=" + this.dataset.info);
-                    iframe.setAttribute("frameborder", "0");
-                    iframe.setAttribute("id", "youtube-iframe");
-                    iframe.setAttribute("style", "width: 100%; height: 100%; position: absolute; top: 0; left: 0;");
-                    if (this.dataset.fullscreen == 1) {
-                        iframe.setAttribute("allowfullscreen", "");
-                    }
-                    while (this.firstChild) {
-                        this.removeChild(this.firstChild);
-                    }
-                    this.appendChild(iframe); 
-                };
-            };
-        });
+        
 
     </script>
 </html>
