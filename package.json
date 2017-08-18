@@ -20,7 +20,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "mocha": "^3.5.0",
-    "nodemon": "^1.11.0"    
+    "nodemon": "^1.11.0"
   },
   "dependencies": {
     "axios": "^0.16.2",
