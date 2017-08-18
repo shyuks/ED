@@ -1,0 +1,308 @@
+/*
+
+Page B CSS
+
+
+*/
+
+
+/* Body */
+body {
+    background-color: grey;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    width: 100%;
+    height: auto 100%;
+    margin: auto 0;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/* Header */
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    background-color: #DAE8F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+header .search-menu {
+    text-align: right;
+    font-size: 20px;
+}
+header .search-menu i {
+    color: black;
+}
+header .ED {
+    color: #7ca9d8;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
+}
+header .ED-desc {
+    font-weight: 600;
+}
+header .ED-pedia {
+    font-weight: 0;
+    font-size: 18px;
+
+}
+
+/* Landing Section */
+#landing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: linear-gradient(to left, white, transparent), url("../img/1.png") no-repeat center;
+    background-size: cover;
+}
+#landing h2 {
+    font-weight: bold;
+}
+#landing p {
+    text-align: left;
+    font-size: 12px;
+}
+
+/* break-point-1 */
+#break-point-1 {
+    background-color: #2D2D2D
+}
+.break-point-title-1 {
+    color: white;
+    text-align: center;
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+/* Resources */
+#resources {
+    background-color: #CAE4F9;
+}
+#resources .row .col-xs-2 {
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+#resources p {
+    padding-top: 10px;
+}
+#resources .one {
+    background-color: #CAE4F9 !important;
+    min-height: 250px;
+}
+#resources .two {
+    background-color: #B6DBF9 !important;
+    min-height: 250px;
+}
+#resources .three {
+    background-color: #A4D3F9 !important;
+    min-height: 250px;
+}
+#resources .four {
+    background-color: #93CBF9 !important;
+    min-height: 250px;
+}
+#resources .five {
+    background-color: #81C3F9 !important;
+    min-height: 250px;
+}
+#resources .six {
+    background-color: #93CBF9 !important;
+    min-height: 250px;
+    /*background-color: #72BDF9;*/
+}
+
+/* Videos */
+#videos {
+    background-color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+#videos h3 {
+    display: inline-block;
+}
+#videos p {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#videos .video-border {
+    width: 33%;
+    display: inline-block;
+    background: lightgray;
+}
+#videos .video {
+    width: 100%;
+    height: 100%;
+}
+#videos .video-expansion {
+    display: inline-block;
+    color: #43E1F9;
+    font-size: 24px;
+}
+#videos .video-carousel {
+    padding-top: 50px;
+}
+#videos .carousel-control.left {
+    background-image: none !important;
+}
+#videos .carousel-control.right {
+    background-image: none !important;
+}
+#videos .carousel-indicators {
+    visibility: hidden;
+}
+
+/* Featured */
+#featured {
+    background-color: white;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#featured .col-xs-8 h3 {
+    display: inline-block;
+}
+
+#featured .col-xs-8 span {
+    display: inline-block;
+    color: #43E1F9;
+    font-size: 24px;
+}
+
+/* Break Point 2 */
+#break-point-2 {
+    background: linear-gradient(to left, white, transparent), url("../img/city3.png") no-repeat center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#break-point-2 h3 {
+    text-shadow: 2px 2px 40px #000;
+}
+#break-point-2 p {
+    font-size: 12px;
+}
+
+/* Break Point 3 */
+#break-point-3 {
+    background: linear-gradient(to right, white, transparent), url("../img/city3.png") no-repeat center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#break-point-3 h3 {
+    text-shadow: 2px 2px 40px #000;
+}
+#break-point-3 p {
+    font-size: 12px;
+}
+
+/* How */
+#how {
+    background-color: #AED8F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#how .col-xs-5 p {
+    font-size: 10px;
+}
+
+
+/* community */
+#community {
+    background-color: white;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+#community .col-xs-8 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+#community .col-xs-8 h3 {
+    display: inline-block;
+}
+#community .col-xs-8 span {
+    display: inline-block;
+    color: #43E1F9;
+    font-size: 24px;
+}
+#community .forum .box {
+    background-color: #EAEAEA;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+#community .forum .odd {
+    padding-bottom: 20px !important;
+}
+#community .forum h4 {
+    font-size: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#community .forum p {
+    font-size: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#community .box:hover {
+    background-color: #81C3F9;
+}
+#community .author {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/* email subscription */
+#email-subscription {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 80px;
+}
+#email-subscription .email-box {
+    height: 200px;
+    width: 100%;
+}
+#email-subscription .email-img {
+    background-image: url('../img/email_subscribe.png');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 36%;
+    position: absolute;
+}
+#email-subscription .email-form {
+    float: right;
+    text-align: center;
+    color: white;
+    height: 200px;
+    background-color: #847F81;
+    width: 64%;
+}
+#email-subscription .email-form h3 {
+    padding-top: 30px;
+    font-size: 26px;
+}
+
+/* Footer */
+#footer {
+    background-color: #9AC6EA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer h4 {
+    font-weight: 500;
+}
+#footer p {
+    margin: 0 !important;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+#footer i {
+    font-size: 18px;
+}

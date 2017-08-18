@@ -1,0 +1,161 @@
+/* Body */
+body {
+    background-color: grey;
+    overflow-x: hidden;
+    font-family: Montserrat;
+    width: 100%;
+    height: auto 100%;
+    margin: auto 0;
+    position: relative;
+    transition: all 0.5s ease;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: #DAE8F2;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+header .search-menu {
+    text-align: right;
+    font-size: 20px;
+}
+header .search-menu i {
+    color: black;
+}
+header a {
+    text-decoration: none;
+    color: black;
+}
+header .ED {
+    color: #7ca9d8;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: Montserrat;
+    letter-spacing: 0.5px;
+}
+header .ED-desc {
+    font-weight: 600;
+}
+header .ED-pedia {
+    font-weight: 0;
+    font-size: 18px;
+}
+
+/* Sticky Social-Media */
+#sticky-social {
+    text-align: center;
+    font-size: 24px;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Article Title */
+#article-title {
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Article Image */
+#article-image {
+    text-align: center;
+    background-color: white;
+}
+#article-image h3 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+
+/* content section 1 */
+#content-1 {
+    background-color: white;
+}
+
+
+/* Website Name 1 */
+#website-1 {
+    background-color: white;
+}
+
+/* Website Name 2 */
+#website-2 {
+    background-color: white;
+}
+
+/* Website Name 3 */
+#website-3 {
+    background-color: white;
+}
+#website-3 h4 {
+    padding-top: 30px;
+    padding-bottom: 30px
+}
+
+/* Misc Content */
+#misc {
+    background-color: white;
+    padding-bottom: 20px;
+}
+#misc ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+
+/* Browse Resource */
+#browse {
+    background-color: white;
+    padding-bottom: 80px;
+}
+#browse ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+}
+#browse ul li {
+    padding: 5px;
+    margin-right: 5px;
+}
+#browse li img {
+    width: 12%;
+    height: auto;
+}
+
+/* How */
+#how {
+    background-color: #AED8F9;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#how .col-xs-5 p {
+    font-size: 10px;
+}
+
+/* Footer */
+#footer {
+    background-color: #9AC6EA;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#footer h4 {
+    font-weight: 500;
+}
+#footer p {
+    margin: 0 !important;
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+#footer i {
+    font-size: 18px;
+}

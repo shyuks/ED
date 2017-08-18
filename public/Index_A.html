@@ -5,6 +5,7 @@
         <title>ErectileDysfunction | Doctorpedia</title>
         <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="./css/Index_A.css">
         <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
@@ -13,293 +14,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     </head>
 
-    <style media="screen">
-
-        /* Body */
-        body {
-            background-color: grey;
-            overflow-x: hidden;
-            font-family: Montserrat;
-            width: 100%;
-            height: auto 100%;
-            margin: auto 0;
-            position: relative;
-            transition: all 0.5s ease;
-        }
-
-        /* Header */
-        header {
-            position: fixed;
-            z-index: 1;
-            width: 100%;
-            top: 0;
-            background-color: #DAE8F2;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            font-family: Montserrat;
-            font-size: 16px;
-        }
-        header .search-menu {
-            text-align: right;
-            font-size: 20px;
-        }
-        header .search-menu i {
-            color: black;
-        }
-        header .ED {
-            color: #7ca9d8;
-            font-size: 19px;
-            font-weight: 600;
-            font-family: Montserrat;
-            letter-spacing: 0.5px;
-        }
-        header .ED-desc {
-            font-weight: 600;
-        }
-        header .ED-pedia {
-            font-weight: 0;
-            font-size: 18px;
-
-        }
-
-        /* Landing Section */
-        #landing {
-            padding-top: 100px;
-            padding-bottom: 0px;
-            text-align: center;
-            background-color: white;
-        }
-
-        .landing-title {
-            font-weight: bold;
-            font-size: 50px;
-        }
-
-        /* break-point-1 */
-        #break-point-1 {
-            background-color: white;
-        }
-        .break-point-title-1 {
-            text-align: center;
-            margin-top: 35px !important;
-            margin-bottom: 35px !important;
-        }
-
-        /* Resources */
-        #resources {
-            background-color: #CAE4F9;
-        }
-        #resources .row .col-xs-2 {
-            padding-top: 10px;
-            padding-bottom: 100px;
-        }
-        #resources p {
-            padding-top: 10px;
-        }
-        #resources .one {
-            background-color: #CAE4F9 !important;
-        }
-        #resources .two {
-            background-color: #B6DBF9 !important;
-        }
-        #resources .three {
-            background-color: #A4D3F9 !important;
-        }
-        #resources .four {
-            background-color: #93CBF9 !important;
-        }
-        #resources .five {
-            background-color: #81C3F9 !important;
-        }
-        #resources .six {
-            background-color: #93CBF9 !important;
-            /*background-color: #72BDF9;*/
-        }
-
-        /* Featured */
-        #featured {
-            background-color: white;
-            text-align: center;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-
-        #featured .col-xs-8 h3 {
-            display: inline-block;
-        }
-
-        #featured .col-xs-8 span {
-            display: inline-block;
-            color: #43E1F9;
-            font-size: 24px;
-        }
-
-        /* Break Point 2 */
-        #break-point-2 {
-            background: linear-gradient(to left, white, transparent), url("./img/city3.png") no-repeat center;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        #break-point-2 h3 {
-            text-shadow: 2px 2px 40px #000;
-        }
-        #break-point-2 p {
-            font-size: 12px;
-        }
-
-        /* Break Point 3 */
-        #break-point-3 {
-            background: linear-gradient(to right, white, transparent), url("./img/city3.png") no-repeat center;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        #break-point-3 h3 {
-            text-shadow: 2px 2px 40px #000;
-        }
-        #break-point-3 p {
-            font-size: 12px;
-        }
-        /* Videos */
-        #videos {
-            background-color: white;
-            padding-top: 60px;
-            padding-bottom: 60px;
-            text-align: center;
-        }
-        #videos h3 {
-            display: inline-block;
-        }
-        #main-video-container {
-            background-color: white;
-            text-align: center;
-        }
-        #main-video-container .main-video{
-            background-color: black;
-        }
-        #videos .col-xs-8 span {
-            display: inline-block;
-            color: #43E1F9;
-            font-size: 24px;
-        }
-        #videos .video-carousel {
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-        #videos .carousel-control.left {
-            background-image: none !important;
-        }
-        #videos .carousel-control.right {
-            background-image: none !important;
-        }
-        #videos .video {
-            background-color: black;
-        }
-
-        /* How */
-        #how {
-            background-color: #AED8F9;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-        #how .col-xs-5 p {
-            font-size: 10px;
-        }
-
-
-        /* community */
-        #community {
-            background-color: white;
-            padding-top: 60px;
-            padding-bottom: 60px;
-        }
-        #community .col-xs-8 {
-            text-align: center;
-            padding-bottom: 30px;
-        }
-        #community .col-xs-8 h3 {
-            display: inline-block;
-        }
-        #community .col-xs-8 span {
-            display: inline-block;
-            color: #43E1F9;
-            font-size: 24px;
-        }
-        #community .forum .box {
-            background-color: #EAEAEA;
-            padding-top: 10px;
-            padding-bottom: 100px;
-        }
-        #community .forum .odd {
-            padding-bottom: 150px !important;
-        }
-        #community .forum h4 {
-            font-size: 16px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        #community .forum p {
-            font-size: 12px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        #community .box:hover {
-            background-color: #81C3F9;
-        }
-
-        /* email subscription */
-        #email-subscription {
-            background-color: white;
-            padding-top: 10px;
-            padding-bottom: 80px;
-        }
-        #email-subscription .email-box {
-            height: 200px;
-            width: 100%;
-        }
-        #email-subscription .email-img {
-            background-image: url('./img/email_subscribe.png');
-            background-position: center;
-            background-size: cover;
-            height: 200px;
-            width: 36%;
-            position: absolute;
-        }
-        #email-subscription .email-form {
-            float: right;
-            text-align: center;
-            color: white;
-            height: 200px;
-            background-color: #847F81;
-            width: 64%;
-        }
-        #email-subscription .email-form h3 {
-            padding-top: 30px;
-            font-size: 26px;
-        }
-
-        /* Footer */
-        #footer {
-            background-color: #9AC6EA;
-            padding-top: 50px;
-            padding-bottom: 50px;
-        }
-        #footer h4 {
-            font-weight: 500;
-        }
-        #footer p {
-            margin: 0 !important;
-            text-decoration: none;
-            color: black;
-            font-size: 12px;
-        }
-        #footer i {
-            font-size: 18px;
-        }
-
-    </style>
-
     <body>
-
         <!-- Header -->
         <header id="header">
             <div class="container">
@@ -322,10 +37,10 @@
                     <div class"col-xs-12">
                         <h1 class="landing-title">Resources Headers (A)</h1>
                         <p>
-                            Say goodbye to quacks. No more wasting hours diggin for reliable 
-                            health information. 
+                            Say goodbye to quacks. No more wasting hours diggin for reliable
+                            health information.
                             <br>
-                            Get tips from experts and access to the best tools and resources 
+                            Get tips from experts and access to the best tools and resources
                             you need in one convenient place. Hello, Life!
                         </p>
                     </div>
@@ -355,7 +70,7 @@
                     <div class="col-xs-2 three hvr-grow">
                         <img src="./img/icon_digitalapps.png" alt="" style="width: 60px; height: 60px;"><br>
                         <p>Digital Apps</p>
-                        
+
                     </div>
                     <div class="col-xs-2 four hvr-grow">
                         <img src="./img/icon_nutritionfitness.png" alt="" style="width: 60px; height: 60px;"><br>
@@ -372,7 +87,7 @@
                 </div>
             </div>
         </section>
-        
+
         <!-- HR -->
         <section id="featured">
             <div class="container-fluid">
@@ -436,34 +151,43 @@
                 </div>
             </div>
         </section>
+
+
         <!-- Videos -->
         <section id="videos">
             <h3>Videos</h3><br>
-            
+
             <!-- Main Video -->
-            <div id="main-video-container">
+            <div class="main-video-container">
                 <div class="row">
                     <div class="col-xs-2">
                     </div>
                     <div class="col-xs-8">
-                        
-                        <video class="main-video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
-                        
+                        <div class="main-video-iframe">
+                            <iframe
+                                class="video"
+                                src="https://player.vimeo.com/video/228170802"
+                                frameborder="0"
+                                webkitallowfullscreen
+                                mozallowfullscreen
+                                allowfullscreen>
+                            </iframe>
+                        </div>
                     </div>
                     <div class="col-xs-2">
                     </div>
                 </div>
             </div>
-                
+
             <!-- Carousel -->
-            <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div id="carousel" class="carousel slide" data-ride="carousel" data-interval="false">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#carousel" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel" data-slide-to="1"></li>
                     <li data-target="#carousel" data-slide-to="2"></li>
                 </ol>
-                
+
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
@@ -473,15 +197,53 @@
                                 </div>
                                 <div class="col-xs-8">
 
+                                    <!-- First Set Videos -->
+
                                     <div class="row video-carousel">
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228171349"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/225953346"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228170802"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
                                     </div>
 
@@ -499,17 +261,56 @@
                                 </div>
                                 <div class="col-xs-8">
 
+                                    <!-- Second Set of Videos -->
+
                                     <div class="row video-carousel">
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228171349"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/225953346"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228170802"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
                                     </div>
+
 
                                 </div>
                                 <div class="col-xs-2">
@@ -525,15 +326,53 @@
                                 </div>
                                 <div class="col-xs-8">
 
+                                    <!-- Third Set of Videos -->
+
                                     <div class="row video-carousel">
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228171349"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/225953346"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
-                                        <div style="width: 33%; border: 1px solid black; display: inline-block">
-                                            <video class="video" src="https://www.youtube.com/watch?v=sxnlvwprf_c"></video>
+                                        <div class="video-border">
+                                            <iframe
+                                                class="video"
+                                                src="https://player.vimeo.com/video/228170802"
+                                                frameborder="0"
+                                                webkitallowfullscreen
+                                                mozallowfullscreen
+                                                allowfullscreen>
+                                            </iframe>
+                                            <p>
+                                                Description of Video
+                                                Simodi ament exerumquas
+                                                di te sint aut volupid maios maximinctur
+                                            </p>
                                         </div>
                                     </div>
 
@@ -559,6 +398,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+        </section>
 
 
 
@@ -600,13 +440,13 @@
                         <div class="box odd">
                             <h4>Community/<br>Forum Name</h4>
                             <p>
-                                Simodi ament exerumquas 
-                                di te sint aut volupid maios 
-                                maximinctur, ommo ium, volenia 
-                                conesto berum, sumet odi volote 
-                                sint aut volupid maios 
-                                maximinctur, ommrio nseque 
-                                onesto beronesto ber harumquias 
+                                Simodi ament exerumquas
+                                di te sint aut volupid maios
+                                maximinctur, ommo ium, volenia
+                                conesto berum, sumet odi volote
+                                sint aut volupid maios
+                                maximinctur, ommrio nseque
+                                onesto beronesto ber harumquias
                                 pore es voloer orerer
                                 orepudia quat.
                             </p>
@@ -630,13 +470,13 @@
                         <div class="box odd">
                             <h4>Community/<br>Forum Name</h4>
                             <p>
-                                Simodi ament exerumquas 
-                                di te sint aut volupid maios 
-                                maximinctur, ommo ium, volenia 
-                                conesto berum, sumet odi volote 
-                                sint aut volupid maios 
-                                maximinctur, ommrio nseque 
-                                onesto beronesto ber harumquias 
+                                Simodi ament exerumquas
+                                di te sint aut volupid maios
+                                maximinctur, ommo ium, volenia
+                                conesto berum, sumet odi volote
+                                sint aut volupid maios
+                                maximinctur, ommrio nseque
+                                onesto beronesto ber harumquias
                                 pore es voloer orerer
                                 orepudia quat.
                             </p>
