@@ -5,7 +5,7 @@ Page D CSS
 
 */
 
-/* Body */        
+/* Body */
 body {
     background-color: grey;
     overflow-x: hidden;
@@ -107,6 +107,13 @@ header .ED-pedia {
 #resources p {
     padding-top: 10px;
 }
+#resources a {
+    text-decoration: none;
+    color: black;
+}
+#resources .col-xs-2:hover {
+    z-index: 4;
+}
 #resources .one {
     background-color: #CAE4F9 !important;
     min-height: 250px;
@@ -156,6 +163,7 @@ header .ED-pedia {
 /* Break Point 2 */
 #break-point-2 {
     background: linear-gradient(to left, white, transparent), url("../img/screen.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -169,6 +177,7 @@ header .ED-pedia {
 /* Break Point 3 */
 #break-point-3 {
     background: linear-gradient(to right, white, transparent), url("../img/screen2.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -288,7 +297,7 @@ header .ED-pedia {
 /* Responsive*/
 
 @media screen and (max-width: 1200px) {
-    
+
         header .Title {
             display: inline-block;
         }
@@ -302,5 +311,5 @@ header .ED-pedia {
         header .hr {
             display: none;
         }
-    
+
     }
