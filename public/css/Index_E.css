@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     top: 0;
     background-color: #DAE8F2;
@@ -57,8 +57,9 @@ header .ED-pedia {
 }
 
 /* Landing Section */
-.landing-picture {
+#landing .landing-picture {
     position: relative;
+    background: linear-gradient(to right, white, transparent), url("../img/1.png") no-repeat center;
     background-color: white;
     background-position: center;
     background-size: cover;
@@ -66,32 +67,27 @@ header .ED-pedia {
     width: 100%;
     height: 600px;
 }
-.landing-title {
+#landing .landing-title {
     position: absolute;
     text-align: center;
     padding-top: 120px;
 }
-.landing-title h2 {
+#landing .landing-title h2 {
     font-size: 46px;
-    padding-left: 60px;
     text-align: left;
 }
-.landing-title p {
+#landing .landing-title p {
     text-align: left;
-    padding-left: 60px;
-
 }
-#next-steps {
-    background-image: url('./img/button_nextsteps.png');
-    background-position: center;
-    background-size: cover;
+#landing img {
+    margin-top: 10px;
 }
 
 /* break-point */
 #break-point-1 {
     background-color: #4C474A;
 }
-.break-point-title-1 {
+#break-point-1 .break-point-title-1 {
     color: white;
     font-size: 26px;
     font-weight: bold;
@@ -115,6 +111,9 @@ header .ED-pedia {
     text-decoration: none;
     color: black;
 }
+#resources .col-xs-2:hover {
+    z-index: 4;
+}
 #resources .one {
     background-color: #CAE4F9 !important;
     min-height: 250px;
@@ -122,7 +121,6 @@ header .ED-pedia {
 #resources .two {
     background-color: #B6DBF9 !important;
     min-height: 250px;
-
 }
 #resources .three {
     background-color: #A4D3F9 !important;
@@ -187,6 +185,11 @@ header .ED-pedia {
 #videos .carousel-indicators {
     visibility: hidden;
 }
+#videos .feature-plus {
+    display: inline-block;
+    color: #43E1F9;
+    font-size: 24px;
+}
 
 /* How */
 #how {
@@ -200,7 +203,8 @@ header .ED-pedia {
 
 /* Break Point 2 */
 #break-point-2 {
-    background: linear-gradient(to left, white, transparent), url("../img/city3.png") no-repeat center;
+    background: linear-gradient(to left, white, transparent), url("../img/screen.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -213,7 +217,8 @@ header .ED-pedia {
 
 /* Break Point 3 */
 #break-point-3 {
-    background: linear-gradient(to right, white, transparent), url("../img/city3.png") no-repeat center;
+    background: linear-gradient(to right, white, transparent), url("../img/screen2.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -312,4 +317,25 @@ header .ED-pedia {
 }
 #footer i {
     font-size: 18px;
+}
+
+
+/* Responsive*/
+
+@media screen and (max-width: 1200px) {
+
+    header .Title {
+        display: inline-block;
+    }
+    header .ED-desc {
+        display: none;
+    }
+    header .search-menu {
+        float: right;
+        display: inline-block;
+    }
+    header .hr {
+        display: none;
+    }
+
 }

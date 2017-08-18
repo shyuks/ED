@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     width: 100%;
     top: 0;
     background-color: #DAE8F2;
@@ -37,6 +37,10 @@ header .search-menu {
 header .search-menu i {
     color: black;
 }
+header a {
+    text-decoration: none;
+    color: black;
+}
 header .ED {
     color: #7ca9d8;
     font-size: 19px;
@@ -50,7 +54,6 @@ header .ED-desc {
 header .ED-pedia {
     font-weight: 0;
     font-size: 18px;
-
 }
 
 /* Landing Section */
@@ -90,6 +93,13 @@ header .ED-pedia {
 #resources p {
     padding-top: 10px;
 }
+#resources a {
+    text-decoration: none;
+    color: black;
+}
+#resources .col-xs-2:hover {
+    z-index: 4;
+}
 #resources .one {
     background-color: #CAE4F9 !important;
     min-height: 250px;
@@ -101,18 +111,22 @@ header .ED-pedia {
 #resources .three {
     background-color: #A4D3F9 !important;
     min-height: 250px;
+
 }
 #resources .four {
     background-color: #93CBF9 !important;
     min-height: 250px;
+
 }
 #resources .five {
     background-color: #81C3F9 !important;
     min-height: 250px;
+
 }
 #resources .six {
     background-color: #93CBF9 !important;
     min-height: 250px;
+
     /*background-color: #72BDF9;*/
 }
 
@@ -178,7 +192,8 @@ header .ED-pedia {
 
 /* Break Point 2 */
 #break-point-2 {
-    background: linear-gradient(to left, white, transparent), url("../img/city3.png") no-repeat center;
+    background: linear-gradient(to left, white, transparent), url("../img/screen.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -191,7 +206,8 @@ header .ED-pedia {
 
 /* Break Point 3 */
 #break-point-3 {
-    background: linear-gradient(to right, white, transparent), url("../img/city3.png") no-repeat center;
+    background: linear-gradient(to right, white, transparent), url("../img/screen2.png") no-repeat center;
+    background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -305,4 +321,25 @@ header .ED-pedia {
 }
 #footer i {
     font-size: 18px;
+}
+
+
+/* Responsive*/
+
+@media screen and (max-width: 1200px) {
+
+    header .Title {
+        display: inline-block;
+    }
+    header .ED-desc {
+        display: none;
+    }
+    header .search-menu {
+        float: right;
+        display: inline-block;
+    }
+    header .hr {
+        display: none;
+    }
+
 }

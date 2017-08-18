@@ -159,3 +159,24 @@ header .ED-pedia {
 #footer i {
     font-size: 18px;
 }
+
+
+/* Responsive*/
+
+@media screen and (max-width: 1200px) {
+
+    header .Title {
+        display: inline-block;
+    }
+    header .ED-desc {
+        display: none;
+    }
+    header .search-menu {
+        float: right;
+        display: inline-block;
+    }
+    header .hr {
+        display: none;
+    }
+
+}
