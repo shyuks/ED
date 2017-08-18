@@ -75,7 +75,7 @@ header .ED-pedia {
 #break-point-1 {
     background-color: #2D2D2D
 }
-.break-point-title-1 {
+#break-point-1 .break-point-title-1 {
     color: white;
     text-align: center;
     margin-top: 35px !important;
