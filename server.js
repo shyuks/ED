@@ -29,13 +29,21 @@ app.get('/E', function(req, res) {
 });
 
 app.get('/search', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/search.html'))
+    res.sendFile(path.join(__dirname, './public/templates/search.html'));
 });
 
 app.get('/article', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/templates/article.html'))
+    res.sendFile(path.join(__dirname, './public/templates/article.html'));
+});
+
+app.get('/article-video', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/article_video.html'));
+});
+
+app.get('/contact-us', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
 app.listen(3000, function() {
-    console.log('Listening On 3000...')
+    console.log('Listening On 3000...');
 });

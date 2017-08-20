@@ -125,22 +125,18 @@ header .ED-pedia {
 #resources .three {
     background-color: #A4D3F9 !important;
     min-height: 250px;
-
 }
 #resources .four {
     background-color: #93CBF9 !important;
     min-height: 250px;
-
 }
 #resources .five {
     background-color: #81C3F9 !important;
     min-height: 250px;
-
 }
 #resources .six {
     background-color: #93CBF9 !important;
     min-height: 250px;
-
     /*background-color: #72BDF9;*/
 }
 
@@ -250,10 +246,10 @@ header .ED-pedia {
 #community .forum .box {
     background-color: #EAEAEA;
     padding-top: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
 }
 #community .forum .odd {
-    padding-bottom: 150px !important;
+    padding-bottom: 20px !important;
 }
 #community .forum h4 {
     font-size: 16px;
@@ -267,6 +263,10 @@ header .ED-pedia {
 }
 #community .box:hover {
     background-color: #81C3F9;
+}
+#community .author {
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
 /* email subscription */
