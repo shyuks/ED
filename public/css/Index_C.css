@@ -338,6 +338,79 @@ header .ED-pedia {
 }
 
 
+
+
+/* DROP DOWN MENU */
+#main-menu {
+    display: none;
+}
+#main-menu .container {
+    z-index: 1;
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #494548;
+
+}
+#main-menu .menu-left {
+    text-align: left;
+    line-height: 20px;
+}
+#main-menu .menu-left div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+}
+#main-menu .menu-left div a {
+    color: white;
+}
+#main-menu .menu-left span {
+    padding: 50px;
+}
+#main-menu .menu-left span p {
+    margin: 0;
+}
+#main-menu .menu-left span p a {
+    color: white;
+}
+
+textarea:focus, input:focus {
+    color: black;
+}
+
+#main-menu .col-xs-3 {
+    text-align: left;
+    line-height: 20px;
+}
+#main-menu .col-xs-3 img {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#main-menu .col-xs-3 form input {
+    position: relative;
+    width: 220px;
+    color: black;
+}
+#main-menu .col-xs-3 form button {
+    font-size: 14px;
+    position: absolute;
+    float: right;
+    height: 26px;
+    border-radius: initial;
+    padding: 0;
+    background-color: #2ED2F7;
+}
+
+#main-menu .col-xs-3 i {
+    font-size: 18px;
+    color: white;
+}
+
+
 /* Responsive*/
 
 @media screen and (max-width: 1200px) {
