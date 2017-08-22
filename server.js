@@ -8,8 +8,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/404/routing.html'));
+});
+
 app.get('/A', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/Index_A.html'))
+    res.sendFile(path.join(__dirname, './public/Index_A.html'));
 });
 
 app.get('/B', function(req, res) {
@@ -44,6 +48,6 @@ app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
-app.listen(3000, function() {
-    console.log('Listening On 3000...');
+app.listen(8080, '138.68.248.193', function() {
+    console.log('Listening On http://138.68.248.193:8080/');
 });

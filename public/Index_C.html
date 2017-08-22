@@ -662,7 +662,17 @@
     <script type="text/javascript">
 
         $(document).ready(function() {
+	    var myVideo = document.getElementById('background');
 
+            function playVid() {
+                myVideo.play();
+            }
+
+            function pauseVid() {
+                myVideo.pause();
+            }
+
+            playVid();
         })
 
     </script>
