@@ -88,8 +88,8 @@ header .ED-pedia {
 #resources {
     background-color: #CAE4F9;
 }
-#resources .row .col-xs-2 {
-    padding-top: 10px;
+#resources .row .col-xs-4 {
+    padding-top: 30px;
     padding-bottom: 100px;
 }
 #resources p {
@@ -184,6 +184,7 @@ header .ED-pedia {
 }
 #videos h3 {
     display: inline-block;
+    padding-bottom: 20px;
 }
 #videos p {
     font-size: 12px;
@@ -196,7 +197,7 @@ header .ED-pedia {
     color: #43E1F9;
     font-size: 24px;
 }
-#videos .col-xs-8 .main-video-iframe {
+#videos .col-xs-10 .main-video-iframe {
     height: 500px;
 }
 #videos .main-video-container {
@@ -236,15 +237,31 @@ header .ED-pedia {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-#how .col-xs-5 p {
-    font-size: 10px;
+#how .how-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#how .how-title h4 {
+    font-weight: bold;
+}
+#how .how-content-one {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-content-two {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-body p {
+    font-size: 12px;
+    text-align: left;
 }
 
 /* community */
 #community {
     background-color: white;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 #community .col-xs-8 {
     text-align: center;
@@ -262,9 +279,15 @@ header .ED-pedia {
     background-color: #EAEAEA;
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #community .forum .odd {
     padding-bottom: 20px !important;
+    background-color: #EAEAEA;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #community .forum h4 {
     font-size: 16px;
@@ -340,8 +363,9 @@ header .ED-pedia {
 
 /* Responsive*/
 
-@media screen and (max-width: 1200px) {
 
+@media screen and (max-width: 1200px) {
+    
     header .Title {
         display: inline-block !important;
     }
