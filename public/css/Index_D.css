@@ -57,7 +57,7 @@ header .ED-pedia {
 
 /* Landing Section */
 #landing {
-    padding: 100px 20px 20px 20px
+    padding: 80px 20px 0px 20px
 }
 #landing h2 {
     font-weight: bold;
@@ -67,9 +67,7 @@ header .ED-pedia {
     font-size: 12px;
 }
 #landing .landing-info {
-    padding-top: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 80px 20px 0px 20px;
 }
 #landing .video-responsive{
     overflow:hidden;
@@ -100,8 +98,8 @@ header .ED-pedia {
 #resources {
     background-color: #CAE4F9;
 }
-#resources .row .col-xs-2 {
-    padding-top: 10px;
+#resources .row .col-xs-4 {
+    padding-top: 30px;
     padding-bottom: 100px;
 }
 #resources p {
@@ -189,13 +187,30 @@ header .ED-pedia {
 }
 
 /* How */
+/* How */
 #how {
     background-color: #AED8F9;
     padding-top: 40px;
     padding-bottom: 40px;
 }
-#how .col-xs-5 p {
-    font-size: 10px;
+#how .how-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#how .how-title h4 {
+    font-weight: bold;
+}
+#how .how-content-one {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-content-two {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-body p {
+    font-size: 12px;
+    text-align: left;
 }
 
 
@@ -221,9 +236,15 @@ header .ED-pedia {
     background-color: #EAEAEA;
     padding-top: 10px;
     padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #community .forum .odd {
     padding-bottom: 20px !important;
+    background-color: #EAEAEA;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #community .forum h4 {
     font-size: 16px;
@@ -371,18 +392,21 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 1200px) {
 
-        header .Title {
-            display: inline-block;
-        }
-        header .ED-desc {
-            display: none;
-        }
-        header .search-menu {
-            float: right;
-            display: inline-block;
-        }
-        header .hr {
-            display: none;
-        }
-
+    header .Title {
+        display: inline-block;
     }
+    header .ED-desc {
+        display: none;
+    }
+    header .search-menu {
+        float: right;
+        display: inline-block;
+    }
+    header .hr {
+        display: none;
+    }
+
+    .landing-info {
+        padding: 0px 25px 20px 20px !important;
+    }
+}
