@@ -1,6 +1,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+var db = require('./db/connection.js');
 
 var app = express();
 
@@ -48,6 +49,6 @@ app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
-app.listen(8080, '138.68.248.193', function() {
+app.listen(3000, function() {
     console.log('Listening On http://138.68.248.193:8080/');
 });
