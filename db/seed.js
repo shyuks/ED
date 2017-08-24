@@ -2,7 +2,7 @@ var mongoose = require('mongoose')
 var Email = require('./schema/email.js')
 var exampleData = require('./exampleData.json')
 
-mongoose.connect('mongodb://138.68.248.193:27017/test', function() {
+mongoose.connect('mongodb://127.0.0.1:27017/test', function() {
 
     Email.remove({}, function(error) {
         if (error) {
