@@ -110,7 +110,10 @@ header .ED-pedia {
     color: black;
 }
 #resources .col-xs-2:hover {
-    z-index: 4;
+    z-index: 100 !important;
+}
+#resources .col-xs-4:hover {
+    z-index: 100 !important;
 }
 #resources .one {
     background-color: #CAE4F9 !important;
@@ -408,5 +411,11 @@ textarea:focus, input:focus {
 
     .landing-info {
         padding: 0px 25px 20px 20px !important;
+    }
+    #resources .col-xs-2:hover {
+        z-index: 100 !important;
+    }
+    #resources .col-xs-4:hover {
+        z-index: 100 !important;
     }
 }

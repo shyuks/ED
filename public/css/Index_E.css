@@ -358,5 +358,11 @@ header .ED-pedia {
     header .hr {
         display: none;
     }
+    #resources .col-xs-2:hover {
+        z-index: 100 !important;
+    }
+    #resources .col-xs-4:hover {
+        z-index: 100 !important;
+    }
 
 }

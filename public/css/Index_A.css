@@ -100,7 +100,10 @@ header .ED-pedia {
     color: black;
 }
 #resources .col-xs-2:hover {
-    z-index: 4;
+    z-index: 100 !important;
+}
+#resources .col-xs-4:hover {
+    z-index: 100 !important;
 }
 #resources .one {
     background-color: #CAE4F9 !important;
@@ -378,6 +381,12 @@ header .ED-pedia {
     }
     header .hr {
         display: none;
+    }
+    #resources .col-xs-2:hover {
+        z-index: 100 !important;
+    }
+    #resources .col-xs-4:hover {
+        z-index: 100 !important;
     }
 
 }
