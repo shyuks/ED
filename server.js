@@ -14,7 +14,7 @@ app.post('/sendSubscription', function(req, res) {
 
     if (typeof(req.body.payload) === 'string') {
 
-        var transporter = nodemailer.createTransport({
+        let transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 465,
             secure: true, // secure:true for port 465, secure:false for port 587
@@ -24,7 +24,7 @@ app.post('/sendSubscription', function(req, res) {
             }
         });
 
-        var mailOptions = {
+        let mailOptions = {
             to: req.body.payload,
             from: 'sangenyx@gmail.com',
             subject: 'Doctorpedia News Subscription',
@@ -36,6 +36,7 @@ app.post('/sendSubscription', function(req, res) {
             if (error) {
                 return console.log(error);
             }
+            console.log(info);
         });
 
         res.send('sent email');

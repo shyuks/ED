@@ -30,8 +30,5 @@
     "mongoose": "^4.11.6",
     "nodemailer": "^4.0.1",
     "socket.io": "^2.0.3"
-    },
-    "engines": {
-        "node": "6.9.4"
     }
 }
