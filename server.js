@@ -2,7 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
-// var nodemailer = require('nodemailer');
+var nodemailer = require('nodemailer');
 
 var app = express();
 
@@ -14,36 +14,35 @@ app.post('/sendSubscription', function(req, res) {
 
     if (typeof(req.body.payload) === 'string') {
 
-    //     let transporter = nodemailer.createTransport({
-    //         host: 'smtp.gmail.com',
-    //         port: 465,
-    //         secure: true, // secure:true for port 465, secure:false for port 587
-    //         auth: {
-    //             user: 'sangenyx@gmail.com',
-    //             pass: 'Ogabogaa8'
-    //         }
-    //     });
-    //
-    //     let mailOptions = {
-    //         to: req.body.payload,
-    //         from: 'sangenyx@gmail.com',
-    //         subject: 'Doctorpedia News Subscription',
-    //         text: 'Hello',
-    //         html: '<b>Welcome to Doctorpedia News!</b>'
-    //     };
-    //
-    //     transporter.sendMail(mailOptions, (error, info) => {
-    //         if (error) {
-    //             return console.log(error);
-    //         }
-    //         console.log('Message %s sent: %s', info.messageId, info.response);
-    //     });
-    //
-    //     res.send('sent email');
-    //     return;
-    // } else {
-    //     res.send('error in sending email');
-    // }
+        var transporter = nodemailer.createTransport({
+            host: 'smtp.gmail.com',
+            port: 465,
+            secure: true, // secure:true for port 465, secure:false for port 587
+            auth: {
+                user: 'sangenyx@gmail.com',
+                pass: 'Ogabogaa8'
+            }
+        });
+
+        var mailOptions = {
+            to: req.body.payload,
+            from: 'sangenyx@gmail.com',
+            subject: 'Doctorpedia News Subscription',
+            text: 'Hello',
+            html: '<b>Welcome to Doctorpedia News!</b>'
+        };
+
+        transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+        });
+
+        res.send('sent email');
+        return;
+    } else {
+        res.send('error in sending email');
+    }
 })
 
 app.get('/', function(req, res) {
