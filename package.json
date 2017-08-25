@@ -28,6 +28,7 @@
     "express": "^4.15.4",
     "mongodb": "^2.2.30",
     "mongoose": "^4.11.6",
+    "nodemailer": "^4.0.1",
     "socket.io": "^2.0.3"
   }
 }

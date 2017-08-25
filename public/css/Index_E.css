@@ -110,8 +110,11 @@ header .ED-pedia {
     text-decoration: none;
     color: black;
 }
-#resources .col-xs-2:hover {
-    z-index: 4;
+#resources .col-md-2:hover {
+    z-index: 100 !important;
+}
+#resources .col-xs-4:hover {
+    z-index: 100 !important;
 }
 #resources .one {
     background-color: #CAE4F9 !important;

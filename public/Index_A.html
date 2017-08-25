@@ -591,9 +591,11 @@
                             <div class="email-form">
                                 <h3>Want to stay informed?</h3>
                                 <p>Receive the latest news and resources in your inbox!</p>
-                                <form class="" action="index.html" method="post">
-                                    <input type="text" name="Email" placeholder="Email" style="color: black; border-radius: 25px; width: 50%; height: 30px; display: inline-block;">
-                                    <img src="./img/button_subscribe.png" alt="" style="display: inline-block; width: 16%; height: auto 40px;">
+                                <form id="footer-email-form" method="post">
+                                    <input id="Email" type="text" name="Email" value="" placeholder="Email" style="color: black; border-radius: 25px; width: 50%; height: 30px; display: inline-block;" />
+
+                                    <input id="submit" type="image" type="submit" src="./img/button_subscribe.png" alt="Submit Form" style="display: inline-block; width: 16%; height: auto 40px;" />
+
                                 </form>
                             </div>
                         </div>
@@ -675,6 +677,29 @@
 
         $(document).ready(function() {
 
+            $('#submit').on('click', function(e) {
+                e.preventDefault();
+                console.log('clicked');
+                var $email = $('#Email').val();
+                var payload = $email;
+
+                console.log(payload);
+                $.ajax({
+                    url: "http://localhost:3000/sendSubscription",
+                    type: "POST",
+                    dataType: "json",
+                    data: { payload },
+                    success: function(data) {
+                        console.log(data);
+                        return data;
+                    },
+                    error: function(err) {
+                        console.log('errror: ', err);
+                        return err;
+                    }
+                })
+                $("#footer-email-form")[0].reset();
+            })
         })
 
 
