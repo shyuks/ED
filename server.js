@@ -2,8 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
-var nodemailer = require('nodemailer');
-
+// var nodemailer = require('nodemailer');
 
 var app = express();
 
@@ -15,36 +14,36 @@ app.post('/sendSubscription', function(req, res) {
 
     if (typeof(req.body.payload) === 'string') {
 
-        let transporter = nodemailer.createTransport({
-            host: 'smtp.gmail.com',
-            port: 465,
-            secure: true, // secure:true for port 465, secure:false for port 587
-            auth: {
-                user: 'sangenyx@gmail.com',
-                pass: 'Ogabogaa8'
-            }
-        });
-
-        let mailOptions = {
-            to: req.body.payload,
-            from: 'sangenyx@gmail.com',
-            subject: 'Doctorpedia News Subscription',
-            text: 'Hello',
-            html: '<b>Welcome to Doctorpedia News!</b>'
-        };
-
-        transporter.sendMail(mailOptions, (error, info) => {
-            if (error) {
-                return console.log(error);
-            }
-            console.log('Message %s sent: %s', info.messageId, info.response);
-        });
-
-        res.send('sent email');
-        return;
-    } else {
-        res.send('error in sending email');
-    }
+    //     let transporter = nodemailer.createTransport({
+    //         host: 'smtp.gmail.com',
+    //         port: 465,
+    //         secure: true, // secure:true for port 465, secure:false for port 587
+    //         auth: {
+    //             user: 'sangenyx@gmail.com',
+    //             pass: 'Ogabogaa8'
+    //         }
+    //     });
+    //
+    //     let mailOptions = {
+    //         to: req.body.payload,
+    //         from: 'sangenyx@gmail.com',
+    //         subject: 'Doctorpedia News Subscription',
+    //         text: 'Hello',
+    //         html: '<b>Welcome to Doctorpedia News!</b>'
+    //     };
+    //
+    //     transporter.sendMail(mailOptions, (error, info) => {
+    //         if (error) {
+    //             return console.log(error);
+    //         }
+    //         console.log('Message %s sent: %s', info.messageId, info.response);
+    //     });
+    //
+    //     res.send('sent email');
+    //     return;
+    // } else {
+    //     res.send('error in sending email');
+    // }
 })
 
 app.get('/', function(req, res) {
@@ -87,7 +86,10 @@ app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
+// app.listen(3000 function() {
+//     console.log('Listening On http://138.68.248.193:8080/');
+// });
 
-app.listen(3000, function() {
+app.listen(8080, '138.68.248.193', function() {
     console.log('Listening On http://138.68.248.193:8080/');
 });
