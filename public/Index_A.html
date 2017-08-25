@@ -592,6 +592,7 @@
                                 <h3>Want to stay informed?</h3>
                                 <p>Receive the latest news and resources in your inbox!</p>
                                 <form id="footer-email-form" method="post">
+
                                     <input id="Email" type="text" name="Email" value="" placeholder="Email" style="color: black; border-radius: 25px; width: 50%; height: 30px; display: inline-block;" />
 
                                     <input id="submit" type="image" type="submit" src="./img/button_subscribe.png" alt="Submit Form" style="display: inline-block; width: 16%; height: auto 40px;" />
@@ -685,7 +686,7 @@
 
                 console.log(payload);
                 $.ajax({
-                    url: "http://localhost:3000/sendSubscription",
+                    url: "http://138.68.248.193:8080/sendSubscription",
                     type: "POST",
                     dataType: "json",
                     data: { payload },
