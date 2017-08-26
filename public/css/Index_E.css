@@ -327,17 +327,37 @@ header .ED-pedia {
     width: 36%;
     position: absolute;
 }
+#email-subscription #footer-email-form {
+    padding-left: 22px;
+}
 #email-subscription .email-form {
     float: right;
     text-align: center;
     color: white;
-    height: 200px;
+    position: relative;
+    height: 100%;
     background-color: #847F81;
     width: 64%;
 }
 #email-subscription .email-form h3 {
-    padding-top: 30px;
+    padding: 30px 20px 0px 20px;
     font-size: 26px;
+}
+#email-subscription .email-form p {
+    padding: 0px 20px;
+}
+#email-subscription .email-form #Footer-Email {
+    color: #313131;
+    border-radius: 25px;
+    width: 50%;
+    height: 30px;
+    display: inline-block;
+    margin-right: -22px;
+}
+#email-subscription .email-form #Footer-Submit {
+    display: inline-block;
+    height: 30px;
+    vertical-align: top;
 }
 
 /* Footer */
@@ -360,12 +380,56 @@ header .ED-pedia {
 }
 
 
+
+
 /* Responsive*/
+
+
+@media screen and (max-width: 580px) {
+
+    #email-subscription .email-form h3 {
+        padding-top: 10px !important;
+    }
+
+
+}
+
+@media screen and (max-width: 682px) {
+
+    #email-subscription .email-form h3 {
+        margin-top: 10px;
+    }
+    #email-subscription .email-form p {
+        margin-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+
+    #email-subscription #footer-email-form {
+        padding-left: 0px !important;
+    }
+    #email-subscription #Footer-Email {
+        margin-right: 0px !important;
+        width: 80% !important;
+    }
+    #email-subscription #Footer-Submit {
+        margin-top: 5px !important;
+    }
+    #email-subscription .email-form h3 {
+        font-size: 22px;
+    }
+    #email-subscription .email-form p {
+        font-size: 12px;
+    }
+
+}
 
 @media screen and (max-width: 1200px) {
 
     header .Title {
-        display: inline-block;
+        display: inline-block !important;
     }
     header .ED-desc {
         display: none;
@@ -384,4 +448,13 @@ header .ED-pedia {
         z-index: 100 !important;
     }
 
+}
+
+@media screen and (max-width: 577px) {
+
+    #resources .col-xs-4:hover {
+    }
+
+    #resources .col-md-2:hover {
+    }
 }
