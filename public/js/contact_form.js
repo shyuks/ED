@@ -13,7 +13,7 @@ $(document).ready(function() {
             message: message
         }
         $.ajax({
-            url: "http://localhost:3000/sendContactForm",
+            url: "http://138.68.248.193:8080/sendContactForm",
             type: "POST",
             dataType: "json",
             data: { payload },
