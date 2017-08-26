@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css">
         <link rel="stylesheet" href="./bower_components/font-awesome/css/font-awesome.css">
         <link rel="stylesheet" href="./css/contact_us.css">
-	<link rel="stylesheet" href="./css/menu_drop.css">
-	<link rel="stylesheet" href="./bower_components/animate.css/animate.css">
+    	<link rel="stylesheet" href="./css/menu_drop.css">
+    	<link rel="stylesheet" href="./bower_components/animate.css/animate.css">
         <link rel="stylesheet" href="./bower_components/hover/css/hover.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans" rel="stylesheet">
@@ -118,7 +118,6 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-2">
-
                     </div>
                     <div class="col-xs-4">
                         <h4>Contact Us</h4>
@@ -139,12 +138,12 @@
                 <p>Do you have any questions or comments about this site? Let us know.</p>
                 <div class="row">
                     <div class="col-xs-12">
-                        <form class="" action="submit" method="post">
-                            <input type="text" placeholder="First Name" name="FirstName" value="" style="width: 25%;">
-                            <input type="text" placeholder="Last Name" name="" value="" style="width: 25%;"><br>
-                            <input type="text" placeholder="Email" name="" value="" style="width: 50%;"><br>
-                            <textarea type="textarea" rows="7" cols="50" placeholder="Message" name="" value="" style="width: 50%;"></textarea><br>
-                            <button class="btn btn-primary" type="button" name="button">Submit</button>
+                        <form id="contact-us-form" method="post">
+                            <input id="First-Name" type="text" placeholder="First Name"  value="" style="width: 25%;">
+                            <input id="Last-Name" type="text" placeholder="Last Name"  value="" style="width: 25%;"><br>
+                            <input id="Email-From" type="text" placeholder="Email"  value="" style="width: 50%;"><br>
+                            <textarea id="Message-Box" type="textarea" rows="7" cols="50" placeholder="Message" value="" style="width: 50%;"></textarea><br>
+                            <input id="Contact-Submit" type="submit" class="btn btn-primary" />
                         </form>
                     </div>
                 </div>
@@ -213,10 +212,11 @@
 
     </body>
 
-    <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="../js/menu_dropdown.js"></script>
-    <script type="text/javascript" src="../js/email_subscription.js"></script>
-    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/contact_form.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../bower_components/bootstrap/js/modal.js"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $.fn.followTo = function (pos) {

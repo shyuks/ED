@@ -6,14 +6,12 @@ var sendmail = require('sendmail')();
 
 var app = express();
 
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/sendSubscription', function(req, res) {
-
     if (typeof(req.body.payload) === 'string') {
-
         sendmail({
             from: 'sangenyx@gmail.com',
             to: req.body.payload,
@@ -23,13 +21,33 @@ app.post('/sendSubscription', function(req, res) {
             console.log(err && err.stack);
             console.dir(reply);
         });
-
         res.send('sent email');
         return;
     } else {
         res.send('error in sending email');
     }
-})
+});
+
+app.post('/sendContactForm', function(req, res) {
+    var firstName = req.body.payload.firstName;
+    var lastName = req.body.payload.lastName;
+    var email = req.body.payload.email;
+    var message = req.body.payload.message;
+    if ( /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email) ) {
+        sendmail({
+            from: email,
+            to: 'sangenyx@gmail.com',
+            subject: firstName + ' ' + lastName + ' - Inquiry',
+            html: '<b>' + message + '</b>'
+        }, function(err, reply) {
+            console.log(err && err.stack);
+            console.dir(reply);
+        });
+    } else {
+        console.log('invalid email');
+    }
+    res.send('sent')
+});
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, './public/404/routing.html'));

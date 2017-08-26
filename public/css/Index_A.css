@@ -7,6 +7,7 @@ Page A CSS
 
 /* Body */
 body {
+    padding: 0 !important;
     background-color: grey;
     overflow-x: hidden;
     font-family: Montserrat;
@@ -363,7 +364,7 @@ header .ED-pedia {
     padding: 0px 20px;
 }
 #email-subscription .email-form #Footer-Email {
-    color: #313131; 
+    color: #313131;
     border-radius: 25px;
     width: 50%;
     height: 30px;
@@ -403,7 +404,7 @@ header .ED-pedia {
 
 
 @media screen and (max-width: 580px) {
-    
+
     #email-subscription .email-form h3 {
         padding-top: 10px !important;
     }
@@ -412,7 +413,7 @@ header .ED-pedia {
 }
 
 @media screen and (max-width: 682px) {
-    
+
     #email-subscription .email-form h3 {
         margin-top: 10px;
     }
