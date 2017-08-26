@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     $('#Contact-Submit').on('click', function(e) {
         e.preventDefault();
         var firstName = $('#First-Name').val();
@@ -17,12 +18,12 @@ $(document).ready(function() {
             dataType: "json",
             data: { payload },
             success: function(data) {
-                console.log('tacos or piz')
-                console.log(data);
+                $('#Contact-Modal').modal('toggle');
                 return data;
             },
             error: function(err) {
                 console.log('errror: ', err);
+                $('#Contact-Modal').modal('toggle');
                 return err;
             }
         })

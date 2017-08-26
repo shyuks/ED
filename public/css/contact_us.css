@@ -6,6 +6,7 @@ Contact Us CSS
 
 /* Body */
 body {
+    padding: 0 !important;
     background-color: grey;
     overflow-x: hidden;
     font-family: Montserrat;
