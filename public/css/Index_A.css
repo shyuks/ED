@@ -362,7 +362,7 @@ header .ED-pedia {
 #email-subscription .email-form p {
     padding: 0px 20px;
 }
-#email-subscription .email-form #Email {
+#email-subscription .email-form #Footer-Email {
     color: #313131; 
     border-radius: 25px;
     width: 50%;
@@ -370,7 +370,7 @@ header .ED-pedia {
     display: inline-block;
     margin-right: -22px;
 }
-#email-subscription .email-form #submit {
+#email-subscription .email-form #Footer-Submit {
     display: inline-block;
     height: 30px;
     vertical-align: top;
@@ -427,11 +427,11 @@ header .ED-pedia {
     #email-subscription #footer-email-form {
         padding-left: 0px !important;
     }
-    #email-subscription #Email {
+    #email-subscription #Footer-Email {
         margin-right: 0px !important;
         width: 80% !important;
     }
-    #email-subscription #submit {
+    #email-subscription #Footer-Submit {
         margin-top: 5px !important;
     }
     #email-subscription .email-form h3 {
