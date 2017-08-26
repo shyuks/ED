@@ -2,6 +2,7 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
+var sendmail = require('sendmail')();
 
 var app = express();
 
@@ -13,17 +14,15 @@ app.post('/sendSubscription', function(req, res) {
 
     if (typeof(req.body.payload) === 'string') {
 
-        const sendmail = require('sendmail')();
-
-	sendmail({
-    	from: 'sangenyx@gmail.com',
-    	to: req.body.payload,
-    	subject: 'Welcome To Doctorpedia News Letters!',
-    	html: '<b>Thank you for subscribing to Doctorpedia News!</b>',
-  	}, function(err, reply) {
-   	 console.log(err && err.stack);
-    	console.dir(reply);
-	});		
+        sendmail({
+            from: 'sangenyx@gmail.com',
+            to: req.body.payload,
+            subject: 'Welcome To Doctorpedia News Letters!',
+            html: '<b>Thank you for subscribing to Doctorpedia News!</b>'
+        }, function(err, reply) {
+            console.log(err && err.stack);
+            console.dir(reply);
+        });
 
         res.send('sent email');
         return;
@@ -72,10 +71,10 @@ app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
-// app.listen(3000 function() {
-//     console.log('Listening On http://138.68.248.193:8080/');
-// });
-
-app.listen(8080, '138.68.248.193', function() {
+app.listen(3000 ,function() {
     console.log('Listening On http://138.68.248.193:8080/');
 });
+
+// app.listen(8080, '138.68.248.193', function() {
+//     console.log('Listening On http://138.68.248.193:8080/');
+// });
