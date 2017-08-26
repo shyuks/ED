@@ -72,10 +72,10 @@ app.get('/contact-us', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/contact_us.html'));
 });
 
-app.listen(3000, function() {
-    console.log('Listening On http://138.68.248.193:8080/');
-});
-
-// app.listen(8080, '138.68.248.193', function() {
+// app.listen(3000, function() {
 //     console.log('Listening On http://138.68.248.193:8080/');
 // });
+
+app.listen(8080, '138.68.248.193', function() {
+    console.log('Listening On http://138.68.248.193:8080/');
+});
