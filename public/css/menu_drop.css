@@ -9,11 +9,12 @@
     width: 100%;
     height: 100%;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
     background-color: #494548;
 }
 #main-menu .container .row {
     background-color: #494548 !important;
+    padding-bottom: 30px;
 }
 #main-menu .menu-left {
     text-align: left;
@@ -33,7 +34,8 @@
 #main-menu .menu-left span p {
     font-size: 14px;
     margin: 0;
-}#main-menu .menu-left span h4 {
+}
+#main-menu .menu-left span h4 {
     font-size: 14px;
     font-weight: bold;
     color: white;
@@ -41,6 +43,12 @@
 #main-menu .menu-left span p a {
     font-size: 14px;
     color: white;
+}
+#main-menu .menu-left p {
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 0px;
 }
 
 textarea:focus, input:focus {
