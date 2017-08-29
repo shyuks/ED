@@ -1,4 +1,4 @@
-/*
+npm/*
 
 Page A CSS
 
@@ -171,7 +171,7 @@ header .ED-pedia {
         linear-gradient(
             to left, 
             white, 
-            transparent), 
+            rgba(255, 255, 255, 0.2)), 
         url("../img/screen.png") no-repeat center;
     background-size: cover;
     padding-top: 50px;
@@ -187,7 +187,7 @@ header .ED-pedia {
         linear-gradient(
             to right, 
             white, 
-            transparent), 
+            rgba(255, 255, 255, 0.2)), 
         url("../img/screen2.png") no-repeat center;
     background-size: cover;
     padding-top: 50px;
@@ -214,6 +214,7 @@ header .ED-pedia {
     text-align: left;
     padding-left: 5px;
     padding-right: 5px;
+    min-height: 100px;
 }
 #videos span {
     display: inline-block;
@@ -230,6 +231,7 @@ header .ED-pedia {
     width: 33%;
     display: inline-block;
     background: lightgray;
+    vertical-align: top;
 }
 #videos .video {
     width: 100%;
@@ -242,6 +244,9 @@ header .ED-pedia {
 }
 #videos .video-carousel {
     padding-top: 50px;
+}
+#videos .carousel-control {
+    width: 10%;
 }
 #videos .carousel-control.left {
     background-image: none !important;
@@ -347,9 +352,6 @@ header .ED-pedia {
     width: 36%;
     position: absolute;
 }
-#email-subscription #footer-email-form {
-    padding-left: 22px;
-}
 #email-subscription .email-form {
     float: right;
     text-align: center;
@@ -410,12 +412,12 @@ header .ED-pedia {
 
     #break-point-2 {
         background: 
-            linear-gradient(
-                to left, 
-                white 60%, 
-                transparent), 
-            url("../img/screen.png") no-repeat center;
-        background-size: cover;
+        linear-gradient(
+            to left, 
+            white, 
+            rgba(255, 255, 255, 0.7)), 
+        url("../img/screen.png") no-repeat center;
+    background-size: cover;
     }
     #break-point-2 .col-xs-6 {
         width: 10% !important;
@@ -429,13 +431,12 @@ header .ED-pedia {
 
     #break-point-3 {
         background: 
-            linear-gradient(
-                to right,
-                transparent 10%,
-                white 80%,
-                transparent 10%), 
-            url("../img/screen2.png") no-repeat center;
-        background-size: cover;
+        linear-gradient(
+            to right, 
+            white, 
+            rgba(255, 255, 255, 0.7)), 
+        url("../img/screen2.png") no-repeat center;
+    background-size: cover;
     }
     #break-point-3 .col-xs-2 {
         width: 10% !important;
@@ -447,12 +448,9 @@ header .ED-pedia {
         width: 10% !important;
     }
 
-    
-
     #email-subscription .email-form h3 {
         padding-top: 10px !important;
     }
-
 
 }
 
@@ -486,6 +484,26 @@ header .ED-pedia {
         font-size: 12px;
     }
 
+}
+
+@media screen and (max-width: 946px) {
+    
+    #videos .video-border {
+        display: inline-block;
+        width: 100%;
+        margin: 5px 0px;
+        background: none;
+        border: 2px solid lightgray;
+    }
+    #videos .video-border .video {
+        display: block;
+        float: left;
+        width: 50%;
+        margin-right: 15px;
+    }
+    #videos .video-border p {
+        padding-top: 5px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
