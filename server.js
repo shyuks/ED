@@ -6,7 +6,7 @@ var sendmail = require('sendmail')();
 
 var app = express();
 
-app.use(express.favicon(__dirname + './public/img/favicon.ico'));
+// app.use(express.favicon(__dirname + './public/img/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -116,6 +116,10 @@ app.get('/new-treatments-therapies', function(req, res) {
 
 app.get('/health-tip-1', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/articles/health_tip_1.html'))
+})
+
+app.get('/health-tip-2', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/health_tip_2.html'))
 })
 
 app.get('/community-support', function(req, res) {

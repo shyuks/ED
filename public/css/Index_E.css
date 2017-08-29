@@ -68,7 +68,7 @@ header .ED-pedia {
 /* Landing Section */
 #landing .landing-picture {
     position: relative;
-    background: linear-gradient(to right, white, transparent), url("../img/1.png") no-repeat center;
+    background: linear-gradient(to right, white, transparent), url("../img/ed_landing_header_b_s.jpg") no-repeat center;
     background-color: white;
     background-position: center;
     background-size: cover;
@@ -255,7 +255,7 @@ header .ED-pedia {
             to left,
             white,
             rgba(255, 255, 255, 0.2)),
-        url("../img/screen.png") no-repeat center;
+        url("../img/ed_healthtips1_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -271,7 +271,7 @@ header .ED-pedia {
             to right,
             white,
             rgba(255, 255, 255, 0.2)),
-        url("../img/screen2.png") no-repeat center;
+        url("../img/ed_healthtips2_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -414,7 +414,7 @@ header .ED-pedia {
             to left,
             white,
             rgba(255, 255, 255, 0.7)),
-        url("../img/screen.png") no-repeat center;
+        url("../img/ed_healthtips1_s.jpg") no-repeat center;
     background-size: cover;
     }
     #break-point-2 .col-xs-6 {
@@ -433,7 +433,7 @@ header .ED-pedia {
             to right,
             white,
             rgba(255, 255, 255, 0.7)),
-        url("../img/screen2.png") no-repeat center;
+        url("../img/ed_healthtips2_s.jpg") no-repeat center;
     background-size: cover;
     }
     #break-point-3 .col-xs-2 {
