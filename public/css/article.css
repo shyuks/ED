@@ -71,19 +71,29 @@ header .ED-pedia {
     text-align: center;
     background-color: white;
 }
-#article-image h3 {
+#article-image h1 {
     margin: 0;
     padding-top: 10px;
     padding-bottom: 30px;
     text-align: left;
 }
-
+#article-image h2 {
+    text-align: left;
+}
+#article-image h3 {
+    text-align: left;
+}
+#article-image h4 {
+    text-align: left;
+}
+#article-image p {
+    text-align: left;
+}
 
 /* content section 1 */
 #content-1 {
     background-color: white;
 }
-
 
 /* Website Name 1 */
 #website-1 {

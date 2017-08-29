@@ -84,12 +84,17 @@ header .ED-pedia {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#article-app-1 h4 {
+    margin-top: 0;
+}
 #article-app-1 img {
     margin-right: 10px;
     background-color: black;
     width: 100px;
     height: 100px;
     display: inline-block;
+    float: left;
+
 }
 
 /* App Name 2 */

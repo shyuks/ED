@@ -6,6 +6,7 @@ var sendmail = require('sendmail')();
 
 var app = express();
 
+app.use(express.favicon(__dirname + './public/img/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -92,6 +93,58 @@ app.get('/contact-us', function(req, res) {
 app.get('/play-video', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/video_singular.html'))
 });
+
+app.get('/treatments-therapies', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/treatment_therapies.html'))
+})
+
+app.get('/nutrition-fitness', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/nutrition_fitness.html'))
+})
+
+app.get('/non-profit', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/non_profit.html'))
+})
+
+app.get('/news-information', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/news_information.html'))
+})
+
+app.get('/new-treatments-therapies', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/new_treatment.html'))
+})
+
+app.get('/health-tip-1', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/health_tip_1.html'))
+})
+
+app.get('/community-support', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/community_support.html'))
+})
+
+app.get('/digital-apps', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/digital_apps.html'))
+})
+
+app.get('/blog-1', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/blog-1.html'))
+})
+
+app.get('/blog-2', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/blog-2.html'))
+})
+
+app.get('/blog-3', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/blog-3.html'))
+})
+
+app.get('/blog-4', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/blog-4.html'))
+})
+
+app.get('/blog-5', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/articles/blog-5.html'))
+})
 
 app.listen(3000, function() {
     console.log('Listening On http://138.68.248.193:8080/');
