@@ -6,6 +6,10 @@ Page E CSS
 */
 
 
+html {
+    overflow-x: hidden;
+}
+
 /* Body */
 body {
     padding: 0 !important;
@@ -246,11 +250,11 @@ header .ED-pedia {
 
 /* Break Point 2 */
 #break-point-2 {
-    background: 
+    background:
         linear-gradient(
-            to left, 
-            white, 
-            rgba(255, 255, 255, 0.2)), 
+            to left,
+            white,
+            rgba(255, 255, 255, 0.2)),
         url("../img/screen.png") no-repeat center;
     background-size: cover;
     padding-top: 50px;
@@ -262,11 +266,11 @@ header .ED-pedia {
 
 /* Break Point 3 */
 #break-point-3 {
-    background: 
+    background:
         linear-gradient(
-            to right, 
-            white, 
-            rgba(255, 255, 255, 0.2)), 
+            to right,
+            white,
+            rgba(255, 255, 255, 0.2)),
         url("../img/screen2.png") no-repeat center;
     background-size: cover;
     padding-top: 50px;
@@ -403,13 +407,13 @@ header .ED-pedia {
 
 
 @media screen and (max-width: 580px) {
-    
+
     #break-point-2 {
-        background: 
+        background:
         linear-gradient(
-            to left, 
-            white, 
-            rgba(255, 255, 255, 0.7)), 
+            to left,
+            white,
+            rgba(255, 255, 255, 0.7)),
         url("../img/screen.png") no-repeat center;
     background-size: cover;
     }
@@ -424,11 +428,11 @@ header .ED-pedia {
     }
 
     #break-point-3 {
-        background: 
+        background:
         linear-gradient(
-            to right, 
-            white, 
-            rgba(255, 255, 255, 0.7)), 
+            to right,
+            white,
+            rgba(255, 255, 255, 0.7)),
         url("../img/screen2.png") no-repeat center;
     background-size: cover;
     }
@@ -481,7 +485,7 @@ header .ED-pedia {
 }
 
 @media screen and (max-width: 946px) {
-    
+
     #videos .video-border {
         display: inline-block;
         width: 100%;
