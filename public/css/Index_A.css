@@ -175,7 +175,7 @@ header .ED-pedia {
             to left,
             white,
             rgba(255, 255, 255, 0.2)),
-        url("../img/screen.png") no-repeat center;
+        url("../img/ed_healthtips1_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -191,7 +191,7 @@ header .ED-pedia {
             to right,
             white,
             rgba(255, 255, 255, 0.2)),
-        url("../img/screen2.png") no-repeat center;
+        url("../img/ed_healthtips2_s.jpg") no-repeat center;
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -419,7 +419,7 @@ header .ED-pedia {
             to left,
             white,
             rgba(255, 255, 255, 0.7)),
-        url("../img/screen.png") no-repeat center;
+        url("../img/ed_healthtips1_s.jpg") no-repeat center;
     background-size: cover;
     }
     #break-point-2 .col-xs-6 {
@@ -438,7 +438,7 @@ header .ED-pedia {
             to right,
             white,
             rgba(255, 255, 255, 0.7)),
-        url("../img/screen2.png") no-repeat center;
+        url("../img/ed_healthtips2_s.jpg") no-repeat center;
     background-size: cover;
     }
     #break-point-3 .col-xs-2 {

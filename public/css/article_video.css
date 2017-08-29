@@ -125,6 +125,34 @@ header .ED-pedia {
     display: inline-block;
 }
 
+/* App Name 4 */
+#article-app-4 {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#article-app-4 img {
+    margin-right: 10px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+/* App Name 5 */
+#article-app-5 {
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#article-app-5 img {
+    margin-right: 10px;
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
 /* Browse Resource */
 #browse {
     background-color: white;
@@ -150,8 +178,24 @@ header .ED-pedia {
     padding-top: 40px;
     padding-bottom: 40px;
 }
-#how .col-xs-5 p {
-    font-size: 10px;
+#how .how-title {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+#how .how-title h4 {
+    font-weight: bold;
+}
+#how .how-content-one {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-content-two {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+#how .how-body p {
+    font-size: 12px;
+    text-align: left;
 }
 
 /* Footer */
