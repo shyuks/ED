@@ -154,6 +154,14 @@ app.get('/blog-5', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/articles/blog-5.html'))
 })
 
+app.get('/privacy-policy', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/privacy_policy.html'))
+})
+
+app.get('/terms-of-use', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/terms_of_use.html'))
+})
+
 app.listen(3000, function() {
     console.log('Listening On http://138.68.248.193:8080/');
 });
