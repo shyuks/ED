@@ -29,7 +29,7 @@ $(document).ready(function() {
         var payload = $email;
 
         $.ajax({
-            url: "http://www.erectiledysfunctionpedia.com/sendContactForm",
+            url: "http://www.erectiledysfunctionpedia.com/sendSubscription",
             type: "POST",
             dataType: "json",
             data: { payload },
