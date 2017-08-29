@@ -125,6 +125,11 @@ header .ED-pedia {
     padding: 0;
 }
 
+#browse ul li {
+    text-decoration: none;
+    color: black;
+}
+
 /* Browse Resource */
 #browse {
     background-color: white;
