@@ -6,7 +6,7 @@ $(document).ready(function() {
         var payload = $email;
 
         $.ajax({
-            url: "http://138.68.248.193:8080/sendSubscription",
+            url: "http://www.erectiledysfunctionpedia.com/sendSubscription",
             type: "POST",
             dataType: "json",
             data: { payload },
@@ -29,7 +29,7 @@ $(document).ready(function() {
         var payload = $email;
 
         $.ajax({
-            url: "http://138.68.248.193:8080/sendSubscription",
+            url: "http://www.erectiledysfunctionpedia.com/sendContactForm",
             type: "POST",
             dataType: "json",
             data: { payload },
