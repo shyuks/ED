@@ -12,6 +12,9 @@
     padding-bottom: 10px;
     background-color: #494548;
 }
+#main-menu .container .row {
+    background-color: #494548 !important;
+}
 #main-menu .menu-left {
     text-align: left;
     line-height: 20px;
@@ -77,7 +80,7 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 991px) {
-    
+
     #main-menu .col-md-3 h4 {
         font-size: 14px;
         font-weight: normal;

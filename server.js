@@ -50,8 +50,12 @@ app.post('/sendContactForm', function(req, res) {
     res.send('sent')
 });
 
+// app.get('/', function(req, res) {
+//     res.sendFile(path.join(__dirname, './public/404/routing.html'));
+// });
+
 app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, './public/404/routing.html'));
+    res.sendFile(path.join(__dirname, './public/Index_A.html'));
 });
 
 app.get('/A', function(req, res) {

@@ -318,11 +318,17 @@ header .ED-pedia {
     font-size: 24px;
 }
 #community .forum .box {
+    min-height: 250px;
+    max-height: 250px;
     background-color: #EAEAEA;
     padding-top: 10px;
     padding-bottom: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+#community a {
+    text-decoration: none;
+    color: black;
 }
 #community .forum .odd {
     padding-bottom: 20px !important;
