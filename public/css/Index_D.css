@@ -77,7 +77,7 @@ header .ED-pedia {
     font-size: 12px;
 }
 #landing .landing-info {
-    padding: 80px 20px 0px 20px;
+    padding-bottom: 20px;
 }
 #landing .video-responsive{
     overflow:hidden;
@@ -245,7 +245,7 @@ header .ED-pedia {
 #community {
     background-color: white;
     padding-top: 60px;
-    padding-bottom: 60px
+    padding-bottom: 20px;
 }
 #community .col-xs-8 {
     text-align: center;
@@ -266,9 +266,16 @@ header .ED-pedia {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#community a {
+#community a p {
     text-decoration: none;
-    color: black;
+    color: #6DBFF2;
+    padding-right: 0px !important;
+    display: inline-block;
+}
+#community a i {
+    text-decoration: none;
+    color: #6DBFF2;
+    display: inline-block;
 }
 #community .forum .odd {
     padding-bottom: 10px !important;
@@ -289,6 +296,12 @@ header .ED-pedia {
 }
 #community .box:hover {
     background-color: #81C3F9;
+}
+#community .box:hover a p {
+    color:white;
+}
+#community .box:hover a i {
+    color:white;
 }
 #community .author {
     font-weight: bold;
@@ -536,9 +549,6 @@ textarea:focus, input:focus {
         float: left;
         width: 50%;
         margin-right: 15px;
-    }
-    #videos .video-border p {
-        padding-top: 5px;
     }
 }
 

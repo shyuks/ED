@@ -312,9 +312,16 @@ header .ED-pedia {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#community a {
+#community a p {
     text-decoration: none;
-    color: black;
+    color: #6DBFF2;
+    padding-right: 0px !important;
+    display: inline-block;
+}
+#community a i {
+    text-decoration: none;
+    color: #6DBFF2;
+    display: inline-block;
 }
 #community .forum .odd {
     padding-bottom: 10px !important;
@@ -335,6 +342,12 @@ header .ED-pedia {
 }
 #community .box:hover {
     background-color: #81C3F9;
+}
+#community .box:hover a p {
+    color:white;
+}
+#community .box:hover a i {
+    color:white;
 }
 #community .author {
     font-weight: bold;

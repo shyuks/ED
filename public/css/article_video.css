@@ -90,11 +90,9 @@ header .ED-pedia {
 #article-app-1 img {
     margin-right: 10px;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    height: 140px;
     display: inline-block;
     float: left;
-
 }
 
 /* App Name 2 */
@@ -103,12 +101,15 @@ header .ED-pedia {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#article-app-2 h4 {
+    margin-top: 0;
+}
 #article-app-2 img {
     margin-right: 10px;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    height: 140px;
     display: inline-block;
+    float: left;
 }
 
 /* App Name 3 */
@@ -117,12 +118,15 @@ header .ED-pedia {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#article-app-3 h4 {
+    margin-top: 0;
+}
 #article-app-3 img {
     margin-right: 10px;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    height: 140px;
     display: inline-block;
+    float: left;
 }
 
 /* App Name 4 */
@@ -131,12 +135,15 @@ header .ED-pedia {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#article-app-4 h4 {
+    margin-top: 0;
+}
 #article-app-4 img {
     margin-right: 10px;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    height: 140px;
     display: inline-block;
+    float: left;
 }
 
 /* App Name 5 */
@@ -145,12 +152,15 @@ header .ED-pedia {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#article-app-5 h4 {
+    margin-top: 0;
+}
 #article-app-5 img {
     margin-right: 10px;
     background-color: black;
-    width: 100px;
-    height: 100px;
+    height: 140px;
     display: inline-block;
+    float: left;
 }
 
 /* Browse Resource */

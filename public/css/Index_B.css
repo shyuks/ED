@@ -67,12 +67,23 @@ header .ED-pedia {
 }
 
 /* Landing Section */
-#landing {
+#landing .landing-picture {
+    position: relative;
+    background: linear-gradient(to right, white, transparent), url("../img/ed_landing_header_b_s.jpg") no-repeat center;
+    background-color: white;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+    padding-top: 150px;
+}
+/* #landing {
     padding-top: 150px;
     padding-bottom: 150px;
     background: linear-gradient(to left, white, transparent), url("../img/ed_landing_header_b_s.jpg") no-repeat center;
     background-size: cover;
-}
+} */
 #landing h2 {
     font-weight: bold;
 }
@@ -291,7 +302,7 @@ header .ED-pedia {
 #community {
     background-color: white;
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
 }
 #community .col-xs-8 {
     text-align: center;
@@ -312,9 +323,16 @@ header .ED-pedia {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#community a {
+#community a p {
     text-decoration: none;
-    color: black;
+    color: #6DBFF2;
+    padding-right: 0px !important;
+    display: inline-block;
+}
+#community a i {
+    text-decoration: none;
+    color: #6DBFF2;
+    display: inline-block;
 }
 #community .forum .odd {
     padding-bottom: 10px !important;
@@ -335,6 +353,12 @@ header .ED-pedia {
 }
 #community .box:hover {
     background-color: #81C3F9;
+}
+#community .box:hover a p {
+    color:white;
+}
+#community .box:hover a i {
+    color:white;
 }
 #community .author {
     font-weight: bold;
