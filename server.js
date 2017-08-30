@@ -14,8 +14,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.post('/sendSubscription', function(req, res) {
     if (typeof(req.body.payload) === 'string') {
         sendmail({
-            from: 'sangenyx@gmail.com',
+            from: 'team@doctorpedia.com',
             to: req.body.payload,
+            bcc: 'todd@doctorpedia.com',
             subject: 'Welcome To Doctorpedia News Letters!',
             html: '<b>Thank you for subscribing to Doctorpedia News!</b>'
         }, function(err, reply) {
@@ -37,7 +38,7 @@ app.post('/sendContactForm', function(req, res) {
     if ( /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email) ) {
         sendmail({
             from: email,
-            to: 'sangenyx@gmail.com',
+            to: 'todd@doctorpedia.com',
             subject: firstName + ' ' + lastName + ' - Inquiry',
             html: '<b>' + message + '</b>'
         }, function(err, reply) {
