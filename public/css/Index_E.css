@@ -66,19 +66,24 @@ header .ED-pedia {
 }
 
 /* Landing Section */
-#landing .landing-picture {
+#landing {
     position: relative;
-    background: linear-gradient(to right, white, transparent), url("../img/ed_landing_header_e_s.jpg") no-repeat center;
-    background-color: white;
-    background-position: center;
+    background: linear-gradient(to right, white, transparent), url("../img/ed_landing_header_e_s.jpg") no-repeat top;
     background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 600px;
+    padding-top: 48px;
+}
+#landing .container {
+    position: relative;
+    height: 520px;
+    padding-top: 48px;
 }
 #landing .landing-title {
     text-align: center;
-    padding-top: 120px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 #landing .landing-title h2 {
     font-size: 46px;
@@ -481,6 +486,20 @@ header .ED-pedia {
 }
 
 @media screen and (max-width: 780px) {
+
+    #landing {
+        position: relative;
+        background: 
+            linear-gradient(
+                to right,
+                 white, 
+                 rgba(255, 255, 255, 0.5)), 
+            url("../img/ed_landing_header_e_s.jpg") no-repeat right top;
+        background-size: cover;
+        width: 100%;
+        height: 600px;
+        padding-top: 48px;
+    }
 
     #email-subscription #footer-email-form {
         padding-left: 0px !important;
