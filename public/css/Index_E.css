@@ -182,7 +182,7 @@ header .ED-pedia {
     font-size: 12px;
     text-align: left;
     padding: 5px;
-    min-height: 100px;
+    min-height: 50px;
 }
 #videos .video-border {
     width: 33%;
@@ -472,11 +472,11 @@ header .ED-pedia {
 
     #landing {
         position: relative;
-        background: 
+        background:
             linear-gradient(
                 to right,
-                 white, 
-                 rgba(255, 255, 255, 0.5)), 
+                 white,
+                 rgba(255, 255, 255, 0.5)),
             url("../img/ed_landing_header_e_s.jpg") no-repeat right top;
         background-size: cover;
         width: 100%;

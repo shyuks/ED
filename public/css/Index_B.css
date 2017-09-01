@@ -173,7 +173,7 @@ header .ED-pedia {
     font-size: 12px;
     text-align: left;
     padding: 5px;
-    min-height: 100px;
+    min-height: 50px;
 }
 #videos .video-border {
     width: 33%;
@@ -574,7 +574,7 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 946px) {
-    
+
         #videos .video-border {
             display: inline-block;
             width: 100%;
