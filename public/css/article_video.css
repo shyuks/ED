@@ -163,6 +163,11 @@ header .ED-pedia {
     float: left;
 }
 
+
+#browse ul li {
+    text-decoration: none;
+    color: black;
+}
 /* Browse Resource */
 #browse {
     background-color: white;

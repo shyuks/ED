@@ -9,12 +9,12 @@
     width: 100%;
     height: 100%;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     background-color: #494548;
 }
 #main-menu .container .row {
     background-color: #494548 !important;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 #main-menu .menu-left {
     text-align: left;
