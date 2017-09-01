@@ -125,29 +125,27 @@
 
         <!-- Main Landing -->
         <section id="landing">
-            <div class="landing-picture">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12 col-md-5 col-lg-5 landing-title">
-                            <h2>You’re not alone</h2>
-                            <p>
-                                Commonly known as ED, erectile dysfunction is the inability to
-                                achieve and maintain an erection for intercourse or masturbation.
-                                But don’t worry, it’s nothing to be embarrassed about! Roughly
-                                one in ten adult males suffers from this condition on a regular
-                                basis. That averages out to about 3 million cases in the US per year.
-                            </p>
-                            <p>
-                                If you or someone you know suffers from ED, check out the links below
-                                to learn about helpful resources around the web.
-                            </p>
-                            <a href="#break-point-1" style="text-decoration: none; text-align: left;">
-                                <img src="../img/button_nextsteps.png" alt="" style="width: 100px; height: 30px; float: left;">
-                            </a>
-                        </div>
-                        <div class="col-xs-7">
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-1"></div>
+                    <div class="col-xs-12 col-sm-5 landing-title">
+                        <h2>You’re not alone</h2>
+                        <p>
+                            Commonly known as ED, erectile dysfunction is the inability to
+                            achieve and maintain an erection for intercourse or masturbation.
+                            But don’t worry, it’s nothing to be embarrassed about! Roughly
+                            one in ten adult males suffers from this condition on a regular
+                            basis. That averages out to about 3 million cases in the US per year.
+                        </p>
+                        <p>
+                            If you or someone you know suffers from ED, check out the links below
+                            to learn about helpful resources around the web.
+                        </p>
+                        <a href="#break-point-1" style="text-decoration: none; text-align: left;">
+                            <img src="../img/button_nextsteps.png" alt="" style="width: 100px; height: 30px; float: left;">
+                        </a>
                     </div>
+                    <div class="col-sm-6"></div>
                 </div>
             </div>
         </section>
@@ -700,7 +698,7 @@
                     $('.resource-on-hover').css('display', 'none');
                 })
 
-                $('a[href^="#"]').on('click', function(e) {
+                $('a[href^="#break-point-1"]').on('click', function(e) {
                     e.preventDefault();
 
                     var target = this.hash;
