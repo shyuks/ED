@@ -203,40 +203,19 @@
 
                                     <div class="row video-carousel">
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230119192"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-one"></div>
                                             <p>
                                                 Watch Dr. Goldstein explain what ED is.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230120520"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-two"></div>
                                             <p>
                                                 Learn about the biopsychosocial approach to testing for ED.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230120305"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-three"></div>
                                             <p>
                                                 Hear about what goes into testing for ED.
                                             </p>
@@ -261,40 +240,19 @@
 
                                     <div class="row video-carousel">
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230120168"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-four"></div>
                                             <p>
                                                 How common is ED? Watch to find out.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230119259"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                                <div id="video-five"></div>
                                             <p>
                                                 Learn about the Erection Hardness Scale and how it helps diagnose ED.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230121186"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                                <div id="video-six"></div>
                                             <p>
                                                 Watch about treatments that go beyond the basic ED solutions.
                                             </p>
@@ -320,40 +278,19 @@
 
                                     <div class="row video-carousel">
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230973332"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                                <div id="video-seven"></div>
                                             <p>
                                                 Hear about treatment options that a ED specialist might recommend.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230868202"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-eight"></div>
                                             <p>
                                                 Cycling affects ED - even in young people. Click to find out how.
                                             </p>
                                         </div>
                                         <div class="video-border">
-                                            <iframe
-                                                class="video"
-                                                src="https://player.vimeo.com/video/230899079"
-                                                frameborder="0"
-                                                webkitallowfullscreen
-                                                mozallowfullscreen
-                                                allowfullscreen>
-                                            </iframe>
+                                            <div id="video-nine"></div>
                                             <p>
                                                 See what some of the major origins of ED are.
                                             </p>
@@ -683,6 +620,133 @@
                 })
 
             })
+
+    </script>
+
+    <!-- JW Player Scripts -->
+    <script src="//content.jwplatform.com/libraries/ohGAgCYa.js"> </script>
+    <script type="text/javascript">
+
+        // var mainVideo = jwplayer("main-video");
+        // mainVideo.setup({
+        //     mediaid: "Pg9Ba7AA",
+        //     title: "Goldstein Intro",
+        //     displaytitle: true,
+        //     file: "//content.jwplatform.com/videos/Pg9Ba7AA-gjwAq4bE.mp4",
+        //     image: "//content.jwplatform.com/thumbs/Pg9Ba7AA-720.jpg",
+        //     width: "100%",
+        //     aspectratio: "640:360",
+        //     skin: "bekle"
+        // });
+
+        var vidOne = jwplayer("video-one");
+        vidOne.setup({
+            mediaid: "DB0NOXGu",
+            title: "ED Definition",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/DB0NOXGu-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/DB0NOXGu-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle",
+            allowfullscreen: true
+        });
+
+        var vidTwo = jwplayer("video-two");
+        vidTwo.setup({
+            mediaid: "uNV1ZkR5",
+            title: "ED Testing Part Two",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/uNV1ZkR5-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/uNV1ZkR5-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidThree = jwplayer("video-three");
+        vidThree.setup({
+            mediaid: "RTdF6jJz",
+            title: "ED Testing Part One",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/RTdF6jJz-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/RTdF6jJz-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidFour = jwplayer("video-four");
+        vidFour.setup({
+            mediaid: "FiQ4RKlU",
+            title: "ED Stats and Data",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/FiQ4RKlU-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/FiQ4RKlU-1920.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidFive = jwplayer("video-five");
+        vidFive.setup({
+            mediaid: "vcCyJ5HD",
+            title: "Erection Hardness Scale",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/vcCyJ5HD-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/vcCyJ5HD-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidSix = jwplayer("video-six");
+        vidSix.setup({
+            mediaid: "1VJf06H5",
+            title: "Further Treatments and Surgery",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/1VJf06H5-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/1VJf06H5-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidSeven = jwplayer("video-seven");
+        vidSeven.setup({
+            mediaid: "Cme94wde",
+            title: "Treatment Options",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/Cme94wde-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/Cme94wde-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidEight = jwplayer("video-eight");
+        vidEight.setup({
+            mediaid: "ML0jUJDE",
+            title: "Cycling and ED",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/ML0jUJDE-gjwAq4bE.mp4",
+            image: "//content.jwplatform.com/thumbs/ML0jUJDE-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
+
+        var vidNine = jwplayer("video-nine");
+        vidNine.setup({
+            mediaid: "N04YfOMz",
+            title: "Causes",
+            displaytitle: true,
+            file: "//content.jwplatform.com/videos/N04YfOMz-gjwAq4bE.mp4",
+            image: "///content.jwplatform.com/thumbs/N04YfOMz-720.jpg",
+            width: "100%",
+            aspectratio: "640:360",
+            skin: "bekle"
+        });
 
     </script>
 
