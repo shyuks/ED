@@ -2,9 +2,11 @@ var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
 var db = require('./db/connection.js');
+var favicon = require('serve-favicon');
 var sendmail = require('sendmail')();
 
 var app = express();
+app.use(favicon(path.join(__dirname, './public/img/favicon.png')))
 
 // app.use(express.favicon(__dirname + './public/img/favicon.ico'));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -161,6 +163,14 @@ app.get('/privacy-policy', function(req, res) {
 
 app.get('/terms-of-use', function(req, res) {
     res.sendFile(path.join(__dirname, './public/templates/terms_of_use.html'))
+})
+
+app.get('/not-found', function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/non-existant.html'))
+})
+
+app.use(function(req, res) {
+    res.sendFile(path.join(__dirname, './public/templates/non-existant.html'))
 })
 
 app.listen(3000, function() {
