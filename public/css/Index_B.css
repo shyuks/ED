@@ -500,7 +500,7 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 605px) {
-    
+
     #email-subscription .email-box {
         height: 300px !important;
     }
@@ -513,6 +513,31 @@ textarea:focus, input:focus {
     }
 
 }
+
+@media screen and (max-width: 1200px) {
+
+    header .Title {
+        display: inline-block !important;
+    }
+    header .ED-desc {
+        display: none;
+    }
+    header .search-menu {
+        float: right;
+        display: inline-block;
+    }
+    header .hr {
+        display: none;
+    }
+    #resources .col-xs-2:hover {
+        z-index: 100 !important;
+    }
+    #resources .col-xs-4:hover {
+        z-index: 100 !important;
+    }
+
+}
+
 
 @media screen and (max-width: 946px) {
 
@@ -574,28 +599,28 @@ textarea:focus, input:focus {
 }
 
 @media screen and (max-width: 991px) {
-    
+
     #landing p {
-        font-size:18px;
+        font-size: 24px;
     }
 
     #break-point-1 h4 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #break-point-1 i {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #resources p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     #featured h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #break-point-2 p {
-        font-size: 18px;
+        font-size: 24px;
     }
     #break-point-2 {
         background:
@@ -608,7 +633,7 @@ textarea:focus, input:focus {
     }
 
     #break-point-3 p {
-        font-size: 18px;
+        font-size: 24px;
     }
     #break-point-3 {
         background:
@@ -621,73 +646,49 @@ textarea:focus, input:focus {
     }
 
     #videos h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #videos p {
         min-height: 100px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #community h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #community h4 {
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
     #community p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
     #community i {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #email-subscription h3 {
         padding: 10px 0px !important;
     }
     #email-subscription p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
     #email-subscription .email-form p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #how h4 {
-        font-size: 20px !important;
+        font-size: 26px !important;
     }
     #how p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #footer h4 {
-        font-size: 20px !important;
+        font-size: 26px !important;
     }
     #footer p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
-}
-
-@media screen and (max-width: 1200px) {
-
-    header .Title {
-        display: inline-block !important;
-    }
-    header .ED-desc {
-        display: none;
-    }
-    header .search-menu {
-        float: right;
-        display: inline-block;
-    }
-    header .hr {
-        display: none;
-    }
-    #resources .col-xs-2:hover {
-        z-index: 100 !important;
-    }
-    #resources .col-xs-4:hover {
-        z-index: 100 !important;
-    }
-
 }
 
 @media screen and (max-width: 577px) {

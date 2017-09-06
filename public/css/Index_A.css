@@ -485,26 +485,26 @@ header .ED-pedia {
 @media screen and (max-width: 991px) {
 
     #landing p {
-        font-size:18px;
+        font-size: 24px;
     }
 
     #break-point-1 h4 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #break-point-1 i {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #resources p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     #featured h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
 
     #break-point-2 p {
-        font-size: 18px;
+        font-size: 24px;
     }
     #break-point-2 {
         background:
@@ -517,7 +517,7 @@ header .ED-pedia {
     }
 
     #break-point-3 p {
-        font-size: 18px;
+        font-size: 24px;
     }
     #break-point-3 {
         background:
@@ -530,48 +530,48 @@ header .ED-pedia {
     }
 
     #videos h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #videos p {
         min-height: 100px;
-        font-size: 16px;
+        font-size: 20px;
     }
 
     #community h3 {
-        font-size: 26px;
+        font-size: 30px;
     }
     #community h4 {
-        font-size: 20px !important;
+        font-size: 24px !important;
     }
     #community p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
     #community i {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #email-subscription h3 {
         padding: 10px 0px !important;
     }
     #email-subscription p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
     #email-subscription .email-form p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #how h4 {
-        font-size: 20px !important;
+        font-size: 26px !important;
     }
     #how p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 
     #footer h4 {
-        font-size: 20px !important;
+        font-size: 26px !important;
     }
     #footer p {
-        font-size: 18px !important;
+        font-size: 24px !important;
     }
 }
 
