@@ -197,6 +197,29 @@ header .ED-pedia {
 
 /* Responsive*/
 
+@media screen and (max-width: 991px) {
+    body p {
+        font-size: 18px;
+    }
+    body li {
+        font-size: 18px !important;
+    }
+
+    #browse ul a li img {
+        width: 31px !important;
+    }
+    #browse ul a li {
+        font-size: 18px !important;
+    }
+
+    #footer h4 {
+        font-size: 20px !important;
+    }
+    #footer p {
+        font-size: 18px !important;
+    }
+}
+
 @media screen and (max-width: 1200px) {
 
     header .Title {
