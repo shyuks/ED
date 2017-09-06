@@ -89,14 +89,32 @@ textarea:focus, input:focus {
 
 @media screen and (max-width: 991px) {
 
+    #main-menu {
+        font-size: 18px;
+    }
     #main-menu .col-md-3 h4 {
-        font-size: 14px;
+        font-size: 20px;
         font-weight: normal;
     }
     #main-menu .col-md-3 img {
         width: 200px !important;
         padding-top: 0px;
         padding-bottom: 20px;
+    }
+    #main-menu a {
+        font-size: 18px;
+    }
+    #main-menu h4 {
+        font-size: 18px !important;
+    }
+    #main-menu a p {
+        font-size: 18px !important;
+    }
+    #main-menu p {
+        font-size: 18px;
+    }
+    #main-menu #Nav-Email {
+        font-size: 18px;
     }
 
 }

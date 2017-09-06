@@ -322,7 +322,7 @@ header .ED-pedia {
     background-image: url('../img/email_subscribe.png');
     background-position: center;
     background-size: cover;
-    height: 200px;
+    height: 100%;
     width: 36%;
     position: absolute;
 }
@@ -456,68 +456,10 @@ textarea:focus, input:focus {
 
 /* Responsive*/
 
-
-@media screen and (max-width: 580px) {
-
-    #break-point-2 {
-        background:
-        linear-gradient(
-            to left,
-            white,
-            rgba(255, 255, 255, 0.7)),
-        url("../img/ed_healthtips1_s.jpg") no-repeat center;
-    background-size: cover;
-    }
-    #break-point-2 .col-xs-6 {
-        width: 10% !important;
-    }
-    #break-point-2 .col-xs-4 {
-        width: 80% !important;
-    }
-    #break-point-2 .col-xs-2 {
-        width: 10% !important;
-    }
-
-    #break-point-3 {
-        background:
-        linear-gradient(
-            to right,
-            white,
-            rgba(255, 255, 255, 0.7)),
-        url("../img/ed_healthtips2_s.jpg") no-repeat center;
-    background-size: cover;
-    }
-    #break-point-3 .col-xs-2 {
-        width: 10% !important;
-    }
-    #break-point-3 .col-xs-4 {
-        width: 80% !important;
-    }
-    #break-point-3 .col-xs-6 {
-        width: 10% !important;
-    }
-
-    #email-subscription .email-form h3 {
-        padding-top: 10px !important;
-    }
-
-}
-
-@media screen and (max-width: 682px) {
-
-    #email-subscription .email-form h3 {
-        margin-top: 10px;
-    }
-    #email-subscription .email-form p {
-        margin-bottom: 0px;
-    }
-
-}
-
-@media screen and (max-width: 780px) {
-
-    #email-subscription #footer-email-form {
-        padding-left: 0px !important;
+@media screen and (max-width: 605px) {
+    
+    #email-subscription .email-box {
+        height: 300px !important;
     }
     #email-subscription #Footer-Email {
         margin-right: 0px !important;
@@ -525,12 +467,6 @@ textarea:focus, input:focus {
     }
     #email-subscription #Footer-Submit {
         margin-top: 5px !important;
-    }
-    #email-subscription .email-form h3 {
-        font-size: 22px;
-    }
-    #email-subscription .email-form p {
-        font-size: 12px;
     }
 
 }
@@ -549,6 +485,99 @@ textarea:focus, input:focus {
         float: left;
         width: 50%;
         margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+    #landing p {
+        font-size:18px;
+    }
+
+    #break-point-1 h4 {
+        font-size: 26px;
+    }
+    #break-point-1 i {
+        font-size: 26px;
+    }
+
+    #resources p {
+        font-size: 18px;
+    }
+
+    #featured h3 {
+        font-size: 26px;
+    }
+
+    #break-point-2 p {
+        font-size: 18px;
+    }
+    #break-point-2 {
+        background:
+        linear-gradient(
+            to left,
+            white,
+            rgba(255, 255, 255, 0.4)),
+        url("../img/ed_healthtips1_s.jpg") no-repeat left center;
+    background-size: cover;
+    }
+
+    #break-point-3 p {
+        font-size: 18px;
+    }
+    #break-point-3 {
+        background:
+        linear-gradient(
+            to right,
+            white,
+            rgba(255, 255, 255, 0.4)),
+        url("../img/ed_healthtips2_s.jpg") no-repeat right center;
+    background-size: cover;
+    }
+
+    #videos h3 {
+        font-size: 26px;
+    }
+    #videos p {
+        min-height: 100px;
+        font-size: 16px;
+    }
+
+    #community h3 {
+        font-size: 26px;
+    }
+    #community h4 {
+        font-size: 20px !important;
+    }
+    #community p {
+        font-size: 18px !important;
+    }
+    #community i {
+        font-size: 18px !important;
+    }
+
+    #email-subscription h3 {
+        padding: 10px 0px !important;
+    }
+    #email-subscription p {
+        font-size: 18px !important;
+    }
+    #email-subscription .email-form p {
+        font-size: 18px !important;
+    }
+
+    #how h4 {
+        font-size: 20px !important;
+    }
+    #how p {
+        font-size: 18px !important;
+    }
+
+    #footer h4 {
+        font-size: 20px !important;
+    }
+    #footer p {
+        font-size: 18px !important;
     }
 }
 
