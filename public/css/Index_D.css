@@ -488,29 +488,78 @@ textarea:focus, input:focus {
     }
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-device-width: 414px) {
+    
+    #header .row {
+        margin: 0px;
+    }
+    #header .ED {
+        font-size: 40px;
+        padding-left: 10px;
+    }
+    #header .ED-pedia {
+        font-size: 40px;
+    }
+    #header .search-menu {
+        font-size: 40px;
+        padding-right: 20px;
+    }
 
+    #landing {
+        padding-bottom: 40px;
+    }
+    #landing h2 {
+        padding: 30px 20px 10px 20px;
+        font-size: 40px;
+    }
     #landing p {
-        font-size: 24px;
+        padding: 5px 20px;
+        font-size: 30px;
+    }
+    #landing a img {
+        padding-left: 20px;
+        width: 140px !important;
+        height: auto !important;
     }
 
     #break-point-1 h4 {
-        font-size: 30px;
+        font-size: 40px;
     }
     #break-point-1 i {
-        font-size: 30px;
+        font-size: 40px;
     }
 
+    #resources .row .col-xs-4 {
+        padding-bottom: 20px;
+        padding-left: 40px;
+        width: 100%;
+        min-height: 0px;
+    }
     #resources p {
-        font-size: 24px;
+        font-size: 30px;
+        padding: 0px 0px 0px 75px;
+        margin-top: -10px
+    }
+    #resources img {
+        float: left;
     }
 
     #featured h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
 
+    #break-point-2 h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
     #break-point-2 p {
-        font-size: 24px;
+        font-size: 30px;
+    }
+    #break-point-2 a p {
+        font-size: 30px !important;
+    }
+    #break-point-2 a i {
+        font-size: 30px !important;
     }
     #break-point-2 {
         background:
@@ -522,8 +571,18 @@ textarea:focus, input:focus {
     background-size: cover;
     }
 
+    #break-point-3 h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
     #break-point-3 p {
-        font-size: 24px;
+        font-size: 30px;
+    }
+    #break-point-3 a p {
+        font-size: 30px !important;
+    }
+    #break-point-3 a i {
+        font-size: 30px !important;
     }
     #break-point-3 {
         background:
@@ -536,28 +595,35 @@ textarea:focus, input:focus {
     }
 
     #videos h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
     #videos p {
-        min-height: 100px;
-        font-size: 20px;
+        min-height: 160px;
+        font-size: 26px;
     }
 
+    #community .col-xs-6 {
+        width: 100%;
+        padding: 10px 40px;
+    }
     #community h3 {
-        font-size: 30px;
+        font-size: 40px;
     }
     #community h4 {
-        font-size: 24px !important;
+        font-size: 30px !important;
+        font-weight: bold !important;
+        text-align: center !important;
     }
     #community p {
-        font-size: 24px !important;
+        font-size: 30px !important;
     }
     #community i {
-        font-size: 24px !important;
+        font-size: 30px !important;
     }
 
     #email-subscription h3 {
-        padding: 10px 0px !important;
+        font-size: 30px !important;
+        padding: 5px 0px !important;
     }
     #email-subscription p {
         font-size: 24px !important;
@@ -567,14 +633,17 @@ textarea:focus, input:focus {
     }
 
     #how h4 {
-        font-size: 26px !important;
+        font-size: 28px !important;
     }
     #how p {
         font-size: 24px !important;
     }
 
+    #footer .col-xs-2 {
+        padding-left: 45px !important;
+    }
     #footer h4 {
-        font-size: 26px !important;
+        font-size: 28px !important;
     }
     #footer p {
         font-size: 24px !important;

@@ -61,7 +61,7 @@ textarea:focus, input:focus {
     font-size: 14px;
 }
 #main-menu .col-md-3 img {
-    width: 100%;
+    width: 200px;
     padding: 10px 0px;
 }
 #main-menu .col-md-3 form input {
@@ -87,34 +87,49 @@ textarea:focus, input:focus {
     padding: 8px 0px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-device-width: 414px) {
 
-    #main-menu {
-        font-size: 18px;
+    #main-menu .menu-left div {
+        font-size: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
-    #main-menu .col-md-3 h4 {
-        font-size: 20px;
-        font-weight: normal;
-    }
-    #main-menu .col-md-3 img {
-        width: 200px !important;
-        padding-top: 0px;
-        padding-bottom: 20px;
+    #main-menu .menu-left div i {
+        font-size: 25px !important;
     }
     #main-menu a {
-        font-size: 18px;
+        font-size: 28px;
+        padding-left: 25px;
+        
     }
     #main-menu h4 {
-        font-size: 18px !important;
+        font-size: 28px !important;
     }
-    #main-menu a p {
-        font-size: 18px !important;
+    #main-menu .menu-left p {
+        font-size: 28px !important;
+        padding-left: 25px;
+        line-height: 10px;
+    }
+    #main-menu .col-md-3 h4 {
+        font-size: 30px !important;
+        font-weight: normal;
+        padding-top: 10px;
+    }
+    #main-menu .col-md-3 img {
+        width: 375px !important;
+        padding-top: 0px;
+        padding-bottom: 40px;
     }
     #main-menu p {
-        font-size: 18px;
+        font-size: 28px;
+    }
+    #main-menu #Nav-Submit {
+        font-size: 26px;
+        height: 38px;
     }
     #main-menu #Nav-Email {
-        font-size: 18px;
+        font-size: 26px;
+        width: 400px;
     }
 
 }
