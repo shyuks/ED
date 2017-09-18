@@ -1,4 +1,9 @@
 /* Body */
+html {
+    overflow-x: hidden;
+}
+
+/* Body */
 body {
     padding: 0 !important;
     background-color: grey;
@@ -9,6 +14,12 @@ body {
     margin: auto 0;
     position: relative;
     transition: all 0.5s ease;
+}
+
+.top-nav {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
 }
 
 /* Header */
@@ -36,7 +47,7 @@ header a {
 header .ED {
     color: #7ca9d8;
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 900;
     font-family: Montserrat;
     letter-spacing: 0.5px;
 }
@@ -59,11 +70,25 @@ header .ED-pedia {
     padding-bottom: 50px;
 }
 
+/* Title Bar */
+#title-bar {
+    background-color: white;
+    padding-top: 8rem;
+}
+#title-bar img {
+    width: 4rem;
+    margin-right: .5rem;
+}
+#title-bar a {
+    font-size: 1.5rem;
+}
+#title-bar p {
+    padding: 1rem 0rem;
+}
+
 /* Article Title */
 #article-title {
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 /* Article Image */
@@ -93,6 +118,17 @@ header .ED-pedia {
 /* content section 1 */
 #content-1 {
     background-color: white;
+}
+#content-1 h2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+    line-height: 3.5rem;
+}
+#content-1 p {
+    padding: 0rem 0rem 2rem;
+    margin: 0;
+    line-height: 2.5rem;
 }
 
 /* Website Name 1 */
@@ -152,78 +188,353 @@ header .ED-pedia {
 /* How */
 #how {
     background-color: #AED8F9;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 5rem;
 }
 #how .how-title {
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-left: 0rem;
 }
 #how .how-title h4 {
     font-weight: bold;
 }
-#how .how-content-one {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-content-two {
-    padding-left: 45px;
-    padding-right: 45px;
-}
 #how .how-body p {
     font-size: 12px;
     text-align: left;
+    padding: 0rem;
 }
 
 /* Footer */
 #footer {
     background-color: #9AC6EA;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 5rem;
 }
 #footer h4 {
     font-weight: 500;
+    margin-top: 0rem;
 }
 #footer p {
-    margin: 0 !important;
+    margin: 6px 0px;
     text-decoration: none;
     color: black;
     font-size: 12px;
 }
-#footer i {
-    font-size: 18px;
+#footer .footer-legal {
+    margin-left: -6rem;
 }
 
 
 /* Responsive*/
+
+@media screen and (max-device-width: 414px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+
+    p {
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
+    header {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    header .Title {
+        display: block !important;
+    }
+    header .ED {
+        font-size: 4.3rem !important;
+        padding-left: 3rem !important;
+    }
+    header .ED-pedia {
+        font-size: 4.3rem !important;
+    }
+    header .ED-desc {
+        display: block !important;
+        font-size: 2.5rem !important;
+        padding-left: 3rem !important;
+    }
+    header .search-menu {
+        float: right !important;
+        display: inline-block !important;
+        padding-top: 1rem !important;
+    }
+    header .hr {
+        display: none;
+    }
+    header .search-menu i {
+        font-size: 8rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #title-bar {
+        padding-top: 16rem !important;
+    }
+    #title-bar img {
+        width: 7rem !important;
+        margin: 0rem 1rem 0rem 4rem !important;
+    }
+    #title-bar a {
+        font-size: 3.6rem !important;
+    }
+    #title-bar p {
+        font-size: 3rem !important;
+        padding: 2rem 4rem !important;
+    }
+    
+    #article-title {
+        padding: 0rem 4rem !important;
+    }
+    #article-title h1 {
+        font-size: 6rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-title p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-image {
+        padding: 5rem 4rem !important;
+    }
+    #article-image h2 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-image h3 {
+        font-size: 4rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-image p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #content-1 {
+        padding: 5rem 4rem !important;
+    }
+    #content-1 h1 {
+        font-size: 6rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #content-1 h2 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #content-1 h3 {
+        font-size: 4rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #content-1 h4 {
+        font-size: 3.6rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #content-1 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+    #content-1 li {
+        font-size: 3.6rem !important;
+    }
+
+    #website-1 {
+        padding: 5rem 4rem !important;
+    }
+    #website-1 h2 {
+        font-size: 5rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #website-1 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+    #website-1 li {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+    }
+
+    #website-2 {
+        padding: 5rem 4rem !important;
+    }
+    #website-2 h2 {
+        font-size: 5rem !important;
+        padding-top: 4rem !important;
+        padding-bottom: 4rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #website-2 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+    #website-2 li {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+    }
+
+    #website-3 {
+
+    }
+    #website-3 h4 {
+        padding-top: 30px;
+        padding-bottom: 30px
+    }
+
+    #browse h3 {
+        font-size: 6rem !important;
+        padding: 5rem 4rem !important
+    }
+    #browse ul a li img {
+        width: 10rem !important;
+        margin: 0rem 3rem !important;
+    }
+    #browse ul a li {
+        font-size: 4rem !important;
+        padding: 3rem 2rem !important;
+    }
+
+    #how {
+        padding: 10rem !important;
+    }
+    #how h4 {
+        font-size: 4rem !important;
+        padding-bottom: 2rem !important;
+    }
+    #how p {
+        font-size: 3.6rem !important;
+    }
+    
+    #footer {
+        padding: 10rem 5rem !important;
+    }
+    #footer p {
+        font-size: 4rem !important;
+    }
+    #footer .col-xs-6 {
+        text-align: center !important;
+    }
+    #footer .col-xs-6 h4 {
+        font-size: 5rem !important;
+        padding-bottom: 1rem !important;
+    }
+    #footer .col-xs-6 p {
+        padding: 1rem 0rem !important;
+    }
+    #footer .col-xs-12 {
+        padding: 10rem 10rem 0rem !important;
+    }
+    #footer .footer-logo img {
+        width: 59rem !important;
+        margin-left: 4.5rem !important;
+        margin-bottom: 2rem !important;
+        padding-top: 0rem !important;
+    }
+    #footer .footer-logo p {
+        text-align: center !important;
+    }
+
+    #Email-Modal .modal-header span img {
+        width: 40rem !important;
+    }
+    #Email-Modal .modal-body h4 {
+        font-family: Montserrat !important;
+        font-size: 4rem !important;
+        font-weight: bold !important;
+        padding-bottom: 2rem !important;
+    }
+    #Email-Modal .modal-body p {
+        font-size: 3.6rem !important;
+        margin: 0rem !important;
+    }
+    #Email-Modal .modal-footer {
+        padding: 2rem !important;
+        text-align: center !important;
+    }
+    #Email-Modal .modal-footer button {
+        font-size: 5rem !important;
+    }
+}
 
 @media screen and (max-width: 991px) {
     body p {
         font-size: 18px;
     }
     body li {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     #browse ul a li img {
-        width: 31px !important;
+        width: 31px;
     }
     #browse ul a li {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     #footer h4 {
-        font-size: 20px !important;
+        font-size: 18px;
+        text-align: center;
     }
     #footer p {
-        font-size: 18px !important;
+        font-size: 18px;
+        text-align: center;
     }
+    #footer .about {
+        float:left;
+    }
+    #footer .footer-legal {
+        margin-left: 0rem;
+    }
+    #footer .footer-logo {
+        margin-top: 5rem;
+    }
+    #footer .footer-logo img {
+        display: block;
+        margin: 0 auto -1rem;
+    }
+    #footer .footer-logo p {
+        display: block;
+        margin: 0 auto;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
-
+    
     header .Title {
-        display: inline-block;
+        display: inline-block !important;
     }
     header .ED-desc {
         display: none;
@@ -234,6 +545,12 @@ header .ED-pedia {
     }
     header .hr {
         display: none;
+    }
+    #resources .col-xs-2:hover {
+        z-index: 100 !important;
+    }
+    #resources .col-xs-4:hover {
+        z-index: 100 !important;
     }
 
 }

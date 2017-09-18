@@ -77,6 +77,7 @@ header .ED-pedia {
     margin-top: 10px;
 }
 #contact-us .col-xs-12 textarea {
+    border: 1px solid black;
     margin-top: 15px;
 }
 #contact-us .col-xs-12 button {
@@ -95,50 +96,204 @@ header .ED-pedia {
 /* How */
 #how {
     background-color: #AED8F9;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 5rem;
 }
 #how .how-title {
-    padding-left: 60px;
-    padding-right: 60px;
+    margin-left: 0rem;
 }
 #how .how-title h4 {
     font-weight: bold;
 }
-#how .how-content-one {
-    padding-left: 45px;
-    padding-right: 45px;
-}
-#how .how-content-two {
-    padding-left: 45px;
-    padding-right: 45px;
-}
 #how .how-body p {
     font-size: 12px;
     text-align: left;
+    padding: 0rem;
 }
 
 /* Footer */
 #footer {
     background-color: #9AC6EA;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 5rem;
 }
 #footer h4 {
     font-weight: 500;
+    margin-top: 0rem;
 }
 #footer p {
-    margin: 0 !important;
+    margin: 6px 0px;
     text-decoration: none;
     color: black;
     font-size: 12px;
 }
-#footer i {
-    font-size: 18px;
+#footer .footer-legal {
+    margin-left: -6rem;
 }
 
 
 /* Responsive*/
+
+/* Mobile */
+@media screen and (max-device-width: 414px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+
+    h3 { 
+        font-size: 5rem !important;
+    }
+
+    h4 { 
+        font-size: 4rem !important;
+    }
+
+    p {
+        font-size: 3.6rem !important;
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
+    header {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    header .Title {
+        display: block !important;
+    }
+    header .ED {
+        font-size: 4.3rem !important;
+        padding-left: 3rem !important;
+    }
+    header .ED-pedia {
+        font-size: 4.3rem !important;
+    }
+    header .ED-desc {
+        display: block !important;
+        font-size: 2.5rem !important;
+        padding-left: 3rem !important;
+    }
+    header .search-menu {
+        float: right !important;
+        display: inline-block !important;
+        padding-top: 1rem !important;
+    }
+    header .hr {
+        display: none;
+    }
+    header .search-menu i {
+        font-size: 8rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #contact-us-title {
+        padding: 4rem !important;
+    }
+    
+    #contact-us {
+        padding: 4rem !important;
+    }
+    #contact-us #First-Name {
+        display: block !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #contact-us #Last-Name {
+        display: block !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #contact-us #Email-From {
+        display: block !important;
+        width: 85% !important;
+        margin: 0 auto !important;
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #contact-us #Message-Box {
+        display: block !important;
+        width: 85% !important;
+        height: 40rem !important;
+        margin: 0 auto !important;
+        font-size: 5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    #contact-us .col-xs-12 input {
+        font-size: 6rem !important;
+    }
+
+    #how {
+        padding: 10rem !important;
+    }
+    #how h4 {
+        font-size: 4rem !important;
+        padding-bottom: 2rem !important;
+    }
+    #how p {
+        font-size: 3.6rem !important;
+    }
+    
+    #footer {
+        padding: 10rem 5rem !important;
+    }
+    #footer p {
+        font-size: 4rem !important;
+    }
+    #footer .col-xs-6 {
+        text-align: center !important;
+    }
+    #footer .col-xs-6 h4 {
+        font-size: 5rem !important;
+        padding-bottom: 1rem !important;
+    }
+    #footer .col-xs-6 p {
+        padding: 1rem 0rem !important;
+    }
+    #footer .col-xs-12 {
+        padding: 10rem 10rem 0rem !important;
+    }
+    #footer .footer-logo img {
+        width: 59rem !important;
+        margin-left: 4.5rem !important;
+        margin-bottom: 2rem !important;
+        padding-top: 0rem !important;
+    }
+    #footer .footer-logo p {
+        text-align: center !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+
+    #footer h4 {
+        text-align: center;
+    }
+    #footer p {
+        text-align: center;
+    }
+    #footer .about {
+        float:left;
+    }
+    #footer .footer-legal {
+        margin-left: 0rem;
+    }
+    #footer .footer-logo {
+        margin-top: 5rem;
+    }
+    #footer .footer-logo img {
+        display: block;
+        margin: 0 auto -1rem;
+    }
+    #footer .footer-logo p {
+        display: block;
+        margin: 0 auto;
+    }
+
+}
 
 @media screen and (max-width: 1200px) {
 

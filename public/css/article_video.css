@@ -6,6 +6,11 @@ Article Video CSS
 
 
 /* Body */
+html {
+    overflow-x: hidden;
+}
+
+/* Body */
 body {
     padding: 0 !important;
     background-color: grey;
@@ -16,6 +21,12 @@ body {
     margin: auto 0;
     position: relative;
     transition: all 0.5s ease;
+}
+
+.top-nav {
+    position: fixed;
+    z-index: 101;
+    width: 100%;
 }
 
 /* Header */
@@ -66,11 +77,25 @@ header .ED-pedia {
     padding-bottom: 50px;
 }
 
+/* Title Bar */
+#title-bar {
+    background-color: white;
+    padding-top: 8rem;
+}
+#title-bar img {
+    width: 4rem;
+    margin-right: .5rem;
+}
+#title-bar a {
+    font-size: 1.5rem;
+}
+#title-bar p {
+    padding: 1rem 0rem;
+}
+
 /* Article Title */
 #article-title {
     background-color: white;
-    padding-top: 50px;
-    padding-bottom: 30px;
 }
 
 /* Article Video Landing */
@@ -164,10 +189,6 @@ header .ED-pedia {
 }
 
 
-#browse ul li {
-    text-decoration: none;
-    color: black;
-}
 /* Browse Resource */
 #browse {
     background-color: white;
@@ -235,24 +256,278 @@ header .ED-pedia {
 
 /* Responsive*/
 
+@media screen and (max-device-width: 414px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+
+    p {
+        margin: 0 0 3rem;
+        font-family: Roboto !important;
+    }
+
+    header {
+        padding-top: 1.5rem !important;
+        padding-bottom: 1.5rem !important;
+    }
+    header .Title {
+        display: block !important;
+    }
+    header .ED {
+        font-size: 4.3rem !important;
+        padding-left: 3rem !important;
+    }
+    header .ED-pedia {
+        font-size: 4.3rem !important;
+    }
+    header .ED-desc {
+        display: block !important;
+        font-size: 2.5rem !important;
+        padding-left: 3rem !important;
+    }
+    header .search-menu {
+        float: right !important;
+        display: inline-block !important;
+        padding-top: 1rem !important;
+    }
+    header .hr {
+        display: none;
+    }
+    header .search-menu i {
+        font-size: 8rem !important;
+        padding-right: 3rem !important;
+    }
+
+    #title-bar {
+        padding-top: 16rem !important;
+    }
+    #title-bar img {
+        width: 7rem !important;
+        margin: 0rem 1rem 0rem 4rem !important;
+    }
+    #title-bar a {
+        font-size: 3.6rem !important;
+    }
+    #title-bar p {
+        font-size: 3rem !important;
+        padding: 2rem 4rem !important;
+    }
+    
+    #article-title {
+        padding: 5rem 4rem !important;
+    }
+    #article-title h1 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-title h4 {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-app-1 {
+        padding: 5rem 4rem !important;
+    }
+    #article-app-1 h4 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-app-1 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-app-2 {
+        padding: 5rem 4rem !important;
+    }
+    #article-app-2 h4 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-app-2 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-app-3 {
+        padding: 5rem 4rem !important;
+    }
+    #article-app-3 h4 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-app-3 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-app-4 {
+        padding: 5rem 4rem !important;
+    }
+    #article-app-4 h4 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-app-4 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #article-app-5 {
+        padding: 5rem 4rem !important;
+    }
+    #article-app-5 h4 {
+        font-size: 5rem !important;
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        line-height: 7rem !important;
+        margin: 0 !important;
+    }
+    #article-app-5 p {
+        font-size: 3.6rem !important;
+        line-height: 6rem !important;
+        padding: 0rem 0rem 2rem !important;
+        margin: 0 !important;
+    }
+
+    #browse h3 {
+        font-size: 6rem !important;
+        padding: 5rem 4rem !important
+    }
+    #browse ul a li img {
+        width: 10rem !important;
+        margin: 0rem 3rem !important;
+    }
+    #browse ul a li {
+        font-size: 4rem !important;
+        padding: 3rem 2rem !important;
+    }
+
+    #how {
+        padding: 10rem !important;
+    }
+    #how h4 {
+        font-size: 4rem !important;
+        padding-bottom: 2rem !important;
+    }
+    #how p {
+        font-size: 3.6rem !important;
+    }
+    
+    #footer {
+        padding: 10rem 5rem !important;
+    }
+    #footer p {
+        font-size: 4rem !important;
+    }
+    #footer .col-xs-6 {
+        text-align: center !important;
+    }
+    #footer .col-xs-6 h4 {
+        font-size: 5rem !important;
+        padding-bottom: 1rem !important;
+    }
+    #footer .col-xs-6 p {
+        padding: 1rem 0rem !important;
+    }
+    #footer .col-xs-12 {
+        padding: 10rem 10rem 0rem !important;
+    }
+    #footer .footer-logo img {
+        width: 59rem !important;
+        margin-left: 4.5rem !important;
+        margin-bottom: 2rem !important;
+        padding-top: 0rem !important;
+    }
+    #footer .footer-logo p {
+        text-align: center !important;
+    }
+
+    #Email-Modal .modal-header span img {
+        width: 40rem !important;
+    }
+    #Email-Modal .modal-body h4 {
+        font-family: Montserrat !important;
+        font-size: 4rem !important;
+        font-weight: bold !important;
+        padding-bottom: 2rem !important;
+    }
+    #Email-Modal .modal-body p {
+        font-size: 3.6rem !important;
+        margin: 0rem !important;
+    }
+    #Email-Modal .modal-footer {
+        padding: 2rem !important;
+        text-align: center !important;
+    }
+    #Email-Modal .modal-footer button {
+        font-size: 5rem !important;
+    }
+}
+
 @media screen and (max-width: 991px) {
 
     body p {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     #browse ul a li img {
-        width: 31px !important;
+        width: 31px;
     }
     #browse ul a li {
-        font-size: 18px !important;
+        font-size: 18px;
     }
 
     #footer h4 {
-        font-size: 20px !important;
+        font-size: 18px;
+        text-align: center;
     }
     #footer p {
-        font-size: 18px !important;
+        font-size: 18px;
+        text-align: center;
+    }
+    #footer .about {
+        float:left;
+    }
+    #footer .footer-legal {
+        margin-left: 0rem;
+    }
+    #footer .footer-logo {
+        margin-top: 5rem;
+    }
+    #footer .footer-logo img {
+        display: block;
+        margin: 0 auto -1rem;
+    }
+    #footer .footer-logo p {
+        display: block;
+        margin: 0 auto;
     }
 
 }
