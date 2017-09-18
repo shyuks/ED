@@ -81,6 +81,16 @@ header .ED-pedia {
 }
 #landing .mobile-landing {
     display: none;
+    background:
+        linear-gradient(
+        to right,
+        white,
+        transparent),
+        url("../img/ed_landing_header_e_s.jpg") no-repeat top right;
+    background-size: cover;
+    padding-bottom: 5rem;
+    margin-top: 7.5rem !important;
+    height: 50rem !important;
 }
 #landing .landing-title {
     text-align: center;
@@ -316,7 +326,7 @@ header .ED-pedia {
     background-color: #81C3F9;
 }
 #community .box:hover a p {
-    color:white;
+    color:#81C3F9;
 }
 #community .box:hover a i {
     color:white;
@@ -457,24 +467,10 @@ header .ED-pedia {
     }
     
     #landing {
-        background: none;
-        background-size: none;
-        padding-bottom: 0px;
-        padding-top: 0px;
-        height: 0px;
+        background: none !important;
     }
     #landing .mobile-landing {
         display: block !important;
-        background:
-        linear-gradient(
-        to right,
-        white,
-        transparent),
-        url("../img/ed_landing_header_e_s.jpg") no-repeat top right;
-        background-size: cover;
-        padding-bottom: 5rem;
-        margin-top: 12.5rem !important;
-        height: 50rem !important;
     }
     #landing .landing-title {
         display: block !important;
