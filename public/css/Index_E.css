@@ -468,6 +468,7 @@ header .ED-pedia {
     
     #landing {
         background: none !important;
+        height: auto !important;
     }
     #landing .mobile-landing {
         display: block !important;
