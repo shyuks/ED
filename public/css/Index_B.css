@@ -77,11 +77,6 @@ header .ED-pedia {
     height: 600px;
     padding-top: 48px;
 }
-#landing .container {
-    position: relative;
-    height: 520px;
-    padding-top: 48px;
-}
 #landing .mobile-landing {
     display: none;
     background:
@@ -468,6 +463,7 @@ header .ED-pedia {
     
     #landing {
         background: none !important;
+        height: auto !important;
     }
     #landing .mobile-landing {
         display: block !important;
